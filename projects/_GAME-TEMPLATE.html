@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  GAME PROJECT TEMPLATE                                       ║
+  ║                                                              ║
+  ║  HOW TO USE:                                                 ║
+  ║  1. Copy this file and rename it  (e.g. my-game.html)        ║
+  ║  2. Search for every ▼▼▼ REPLACE comment and fill it in      ║
+  ║  3. Add the card to game-projects.html (see comment there)   ║
+  ║  4. Drop your thumbnail/banner images into the images/       ║
+  ║     folder and update the <img> src paths                    ║
+  ║                                                              ║
+  ║  Files prefixed with _ are templates - they won't appear     ║
+  ║  in your nav and don't need to be deployed until filled out. ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ▼▼▼ REPLACE: update title with your project name ▼▼▼ -->
+  <title>PROJECT NAME - Caius Ruscella</title>
+  <meta name="description" content="PROJECT NAME - short one-sentence description for search engines."/>
+  <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body>
+
+  <div class="petals" aria-hidden="true"></div>
+
+  <!-- Navigation - do not change these links -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav__logo">Caius Ruscella</a>
+    <ul class="nav__links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../game-projects.html">Game Projects</a></li>
+      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav__mobile" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>
+    <a href="../game-projects.html">Game Projects</a>
+    <a href="../narrative-projects.html">Narrative Projects</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         BANNER IMAGE  (wide hero image at top of page)
+         Ideal size: 1600×600 px or wider, 16:9 aspect ratio
+    ══════════════════════════════════════════════════════ -->
+    <div class="project-banner">
+      <!-- ▼▼▼ REPLACE: remove the <span> and uncomment the <img> ▼▼▼ -->
+      <span class="project-banner-placeholder">[ Banner image - replace me ]</span>
+      <!-- <img src="../images/YOUR-PROJECT-banner.jpg" alt="PROJECT NAME - banner"/> -->
+      <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+      <img src="../images/branch.svg" alt="" aria-hidden="true"
+           style="position:absolute;bottom:0;right:0;width:min(35%,320px);opacity:.18;pointer-events:none;"/>
+    </div>
+
+    <div class="project-layout">
+
+      <!-- ════════════════════════════════════════
+           MAIN CONTENT COLUMN
+      ════════════════════════════════════════ -->
+      <article class="project-main">
+
+        <!-- Back link - update href if this is a narrative project -->
+        <a href="../game-projects.html" class="project-main__back">← Game Projects</a>
+
+        <!-- ▼▼▼ REPLACE: project title ▼▼▼ -->
+        <h1 class="project-main__title" data-reveal>Project Name</h1>
+        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+
+        <!-- ▼▼▼ REPLACE: context line - studio/class · role · date range ▼▼▼ -->
+        <p class="project-main__meta" data-reveal>
+          Studio / Class &nbsp;·&nbsp; Your Role &nbsp;·&nbsp; Year
+        </p>
+        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+
+        <!-- ▼▼▼ REPLACE: 2-4 sentence overview of the project ▼▼▼ -->
+        <p class="project-main__desc" data-reveal>
+          Write a short overview of the project here. What is it? What were you trying to achieve?
+          Who was it made for or with? Keep it to 2-4 sentences - the detail goes in the sections below.
+        </p>
+        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+
+        <!-- ── What I Built / Did ──────────────────────────── -->
+        <!-- ▼▼▼ REPLACE: update heading and list items ▼▼▼ -->
+        <p class="project-section-label" data-reveal>What I Built</p>
+        <ul data-reveal style="color:var(--text-secondary);padding-left:1.25rem;line-height:2;">
+          <li>Feature or system you built / responsibility you owned</li>
+          <li>Feature or system you built / responsibility you owned</li>
+          <li>Feature or system you built / responsibility you owned</li>
+          <li>Feature or system you built / responsibility you owned</li>
+          <!-- Add or remove items as needed -->
+        </ul>
+        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+
+        <!-- ── Design Notes (optional - delete section if not needed) ── -->
+        <!-- ▼▼▼ REPLACE: share your design thinking ▼▼▼ -->
+        <p class="project-section-label" data-reveal>Design Notes</p>
+        <p data-reveal style="color:var(--text-secondary);">
+          Describe your design decisions, interesting challenges, or what you learned.
+          This is a great place to show how you think, not just what you made.
+          Delete this section if you don't need it.
+        </p>
+        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+
+        <!-- ── Extra Section (optional - duplicate or delete) ─ -->
+        <!--
+        <p class="project-section-label" data-reveal>SECTION HEADING</p>
+        <p data-reveal style="color:var(--text-secondary);">
+          Section content.
+        </p>
+        -->
+
+        <!-- ── Screenshots ──────────────────────────────────── -->
+        <p class="project-section-label" data-reveal>Screenshots</p>
+        <div class="project-gallery" data-reveal>
+          <!--
+            ▼▼▼ REPLACE: swap each placeholder div with an <img> tag ▼▼▼
+            Recommended image size: 800×450 px (16:9)
+            Example:
+              <div class="project-gallery__item">
+                <img src="../images/YOUR-PROJECT-ss1.jpg" alt="Brief description"/>
+              </div>
+          -->
+          <div class="project-gallery__item">
+            <div class="project-gallery__item-placeholder">[ Screenshot 1 ]</div>
+          </div>
+          <div class="project-gallery__item">
+            <div class="project-gallery__item-placeholder">[ Screenshot 2 ]</div>
+          </div>
+          <div class="project-gallery__item">
+            <div class="project-gallery__item-placeholder">[ Screenshot 3 ]</div>
+          </div>
+          <div class="project-gallery__item">
+            <div class="project-gallery__item-placeholder">[ Screenshot 4 ]</div>
+          </div>
+          <!-- Add more gallery items by duplicating a <div class="project-gallery__item"> block -->
+          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+        </div>
+
+      </article>
+
+      <!-- ════════════════════════════════════════
+           SIDEBAR
+      ════════════════════════════════════════ -->
+      <aside class="project-sidebar">
+
+        <!-- Project metadata card -->
+        <div class="sidebar-card">
+          <p class="sidebar-card__label">Project Details</p>
+          <dl>
+            <!-- ▼▼▼ REPLACE: fill in each row; delete rows you don't need ▼▼▼ -->
+            <div class="sidebar-card__row">
+              <dt>Type</dt>      <dd>[ e.g. Roguelike / FPS / Jam ]</dd>
+            </div>
+            <div class="sidebar-card__row">
+              <dt>Engine</dt>    <dd>[ Unity / Unreal / other ]</dd>
+            </div>
+            <div class="sidebar-card__row">
+              <dt>Language</dt>  <dd>[ C# / C++ / GDScript ]</dd>
+            </div>
+            <div class="sidebar-card__row">
+              <dt>Role</dt>      <dd>[ Solo / Lead / Team member ]</dd>
+            </div>
+            <div class="sidebar-card__row">
+              <dt>Team Size</dt> <dd>[ Solo or N people ]</dd>
+            </div>
+            <div class="sidebar-card__row">
+              <dt>Year</dt>      <dd>[ Year ]</dd>
+            </div>
+            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+          </dl>
+        </div>
+
+        <!-- Skills card -->
+        <div class="sidebar-card">
+          <p class="sidebar-card__label">Skills Used</p>
+          <dl>
+            <!-- ▼▼▼ REPLACE: list the skills this project demonstrates ▼▼▼ -->
+            <div class="sidebar-card__row"><dt>Skill / System</dt><dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Skill / System</dt><dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Skill / System</dt><dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Skill / System</dt><dd>✓</dd></div>
+            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+          </dl>
+        </div>
+
+        <!-- Links card -->
+        <div class="sidebar-card sidebar-links">
+          <!--
+            ▼▼▼ REPLACE: uncomment and fill in whichever links apply ▼▼▼
+
+            Play link (itch.io, Steam, etc.):
+            <a href="https://itch.io/YOUR-LINK" target="_blank" rel="noopener" class="btn btn--primary">
+              Play on itch.io
+            </a>
+
+            Trailer:
+            <a href="https://youtube.com/YOUR-TRAILER" target="_blank" rel="noopener" class="btn btn--outline">
+              Watch Trailer
+            </a>
+
+            GitHub:
+            <a href="https://github.com/YOUR-REPO" target="_blank" rel="noopener" class="btn btn--outline">
+              GitHub Repo
+            </a>
+
+            GDD / design doc:
+            <a href="../docs/YOUR-GDD.pdf" target="_blank" rel="noopener" class="btn btn--outline">
+              Design Doc (PDF)
+            </a>
+          -->
+          <p style="font-size:.8rem;color:var(--text-muted);text-align:center;">
+            Add project links by uncommenting the examples above.
+          </p>
+        </div>
+
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- Footer - do not change -->
+  <footer class="footer" aria-label="Footer">
+    <img src="../images/branch.svg" alt="" aria-hidden="true" class="branch branch--footer"/>
+    <p class="footer__name">Caius Ruscella</p>
+    <p class="footer__title">Narrative Designer &amp; Game Developer</p>
+    <ul class="footer__nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../game-projects.html">Game Projects</a></li>
+      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+    </ul>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:cruscella@ruscellaimmersive.com">Email</a>
+    </div>
+    <p class="footer__copy">&copy; 2026 Caius Ruscella · Ruscella Immersive LLC</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caius Ruscella - Narrative Designer &amp; Game Developer</title>
+  <meta name="description" content="Portfolio of Caius Ruscella, Narrative Designer and Game Developer specializing in immersive XR, Unity, and narrative-driven gameplay."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body>
+
+  <!-- ── Falling Petals ──────────────────────────────────── -->
+  <div class="petals" aria-hidden="true"></div>
+
+  <!-- ── Navigation ──────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">Caius Ruscella</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game-projects.html">Game Projects</a></li>
+      <li><a href="narrative-projects.html">Narrative Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav__mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="game-projects.html">Game Projects</a>
+    <a href="narrative-projects.html">Narrative Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <!-- Branch decoration - bottom-right corner like the card back -->
+      <img src="images/branch.svg" alt="" aria-hidden="true" class="branch branch--hero-right"/>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-reveal>Portfolio</p>
+        <h1 class="hero__name" data-reveal data-delay="1">Caius Ruscella</h1>
+        <p class="hero__title" data-reveal data-delay="2">Narrative Designer &amp; Game Developer</p>
+        <p class="hero__bio" data-reveal data-delay="3">
+          VR and game developer specializing in Unity and C#, creating immersive VR, AR, and XR
+          experiences that blend technical design with narrative-driven gameplay.
+        </p>
+        <div class="hero__ctas" data-reveal data-delay="4">
+          <a href="game-projects.html" class="btn btn--primary">Game Projects</a>
+          <a href="narrative-projects.html" class="btn btn--outline">Narrative Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         FEATURED PROJECT - MYTHBOUND
+         Update this section when Mythbound has public assets.
+    ══════════════════════════════════════════════════════ -->
+    <section class="section section--alt featured" id="featured" aria-label="Featured project">
+      <div class="container">
+        <p class="section__label" data-reveal>Currently Working On</p>
+        <div class="featured__inner">
+
+          <!-- ▼▼▼ REPLACE: swap the placeholder div below with an <img> tag once you have a banner image ▼▼▼ -->
+          <div class="featured__image" data-reveal>
+            <div class="featured__image-placeholder">
+              <!-- Replace this div with: <img src="../images/mythbound-banner.jpg" alt="Mythbound key art"/> -->
+              [ Mythbound banner image ]
+            </div>
+          </div>
+          <!-- ▲▲▲ END IMAGE REPLACE ▲▲▲ -->
+
+          <div data-reveal data-delay="2">
+            <p class="featured__kicker">Featured - Active Project</p>
+            <h2 class="featured__name">Mythbound</h2>
+            <p class="featured__role">Design Lead &amp; Technical Designer · Skaldforge · Oct 2025 - Present</p>
+            <p class="featured__desc">
+              Leading gameplay and systems design for Mythbound - defining combat, momentum-based
+              movement, character abilities, and progression. Responsible for all GDD documentation,
+              system flowcharts, bark sheets, and design reviews that guide the full development team.
+            </p>
+            <div class="featured__tags">
+              <span class="tag">Design Lead</span>
+              <span class="tag">Systems Design</span>
+              <span class="tag">GDD Writing</span>
+              <span class="tag">Bark Sheets</span>
+              <span class="tag">Narrative</span>
+              <span class="tag">Unreal Engine</span>
+            </div>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+              <a href="projects/mythbound.html" class="btn btn--primary">View Project</a>
+              <a href="narrative-projects.html" class="btn btn--outline">Narrative Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         PROJECT BUCKETS
+    ══════════════════════════════════════════════════════ -->
+    <section class="section" id="projects" aria-label="Project categories">
+      <div class="container">
+        <p class="section__label" data-reveal>My Work</p>
+        <h2 class="section__title" data-reveal data-delay="1">Projects</h2>
+        <div class="section__divider" data-reveal data-delay="2"></div>
+
+        <div class="cards-grid">
+
+          <!-- Game Projects card -->
+          <a href="game-projects.html" class="card" data-reveal data-delay="1">
+            <div class="card__image">
+              <!-- ▼▼▼ REPLACE: swap placeholder with a representative game screenshot ▼▼▼ -->
+              <div class="card__image-placeholder">[ Game Projects image ]</div>
+              <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+              <span class="card__badge">4 Projects</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Game Projects</h3>
+              <p class="card__meta">Unity · Unreal · C# · Systems Design</p>
+              <p class="card__desc">
+                Dungeon crawlers, horror games, jam entries, and a live studio project -
+                all built from the ground up with gameplay systems and environmental storytelling.
+              </p>
+              <span class="card__link">Browse Game Projects →</span>
+            </div>
+          </a>
+
+          <!-- Narrative Projects card -->
+          <a href="narrative-projects.html" class="card" data-reveal data-delay="2">
+            <div class="card__image">
+              <!-- ▼▼▼ REPLACE: swap placeholder with a writing sample image or GDD screenshot ▼▼▼ -->
+              <div class="card__image-placeholder">[ Narrative Projects image ]</div>
+              <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+              <span class="card__badge">Writing &amp; Design</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Narrative Projects</h3>
+              <p class="card__meta">GDDs · Bark Sheets · Scripts · Dialogue</p>
+              <p class="card__desc">
+                Game design documents, bark sheet libraries, quest scripts, and story systems -
+                the narrative craft behind the games.
+              </p>
+              <span class="card__link">Browse Narrative Work →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════════════════════ -->
+    <section class="section section--alt" id="about" aria-label="About Caius">
+      <div class="container">
+        <p class="section__label" data-reveal>About Me</p>
+        <h2 class="section__title" data-reveal data-delay="1">Caius Ruscella</h2>
+        <div class="section__divider" data-reveal data-delay="2"></div>
+
+        <div class="about__grid">
+
+          <!-- ▼▼▼ REPLACE: swap placeholder with your photo ▼▼▼ -->
+          <div class="about__image-wrap" data-reveal>
+            <!-- Replace the div content with: <img src="images/caius-photo.jpg" alt="Caius Ruscella"/> -->
+            <p class="about__image-placeholder">[ Your photo here ]</p>
+          </div>
+          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+
+          <div class="about__text" data-reveal data-delay="2">
+            <p>
+              Hi, I'm Caius - a narrative designer and game developer focused on creating
+              meaningful, immersive, and interactive experiences. I specialize in blending
+              technical Unity/Unreal development with story-first design thinking.
+            </p>
+            <p>
+              Currently pursuing my MS in Interactive Entertainment at the Florida Interactive
+              Entertainment Academy while serving as Design Lead on <em>Mythbound</em> at
+              Skaldforge, where I own systems design, GDD documentation, and narrative production.
+            </p>
+            <p>
+              My background spans VR/AR/XR development, 360° cinematic production, and client-facing
+              studio work across AccessVR, VOTU LLC, SCIL Labs, and my own studio, Ruscella Immersive LLC.
+            </p>
+
+            <div class="about__details">
+              <div class="about__detail">
+                <label>Location</label>
+                <span>United States</span>
+              </div>
+              <div class="about__detail">
+                <label>Education</label>
+                <span>MS Interactive Entertainment - FIEA / UCF</span>
+              </div>
+              <div class="about__detail">
+                <label>Studio</label>
+                <span>Ruscella Immersive LLC</span>
+              </div>
+              <div class="about__detail">
+                <label>Email</label>
+                <span>cruscella@ruscellaimmersive.com</span>
+              </div>
+            </div>
+
+            <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+              <!-- ▼▼▼ REPLACE: update the href to point to your resume PDF ▼▼▼ -->
+              <a href="resume/Caius-Ruscella-Resume.pdf" target="_blank" rel="noopener" class="btn btn--primary">Download Resume</a>
+              <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+              <a href="#contact" class="btn btn--outline">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SKILLS
+    ══════════════════════════════════════════════════════ -->
+    <section class="section" aria-label="Skills and tools">
+      <div class="container">
+        <p class="section__label" data-reveal>What I Bring</p>
+        <h2 class="section__title" data-reveal data-delay="1">Skills &amp; Tools</h2>
+        <div class="section__divider" data-reveal data-delay="2"></div>
+
+        <p class="section__label" style="letter-spacing:.12em;text-transform:none;font-size:.85rem;color:var(--text-muted);margin-bottom:1rem;" data-reveal>Core Skills</p>
+        <div class="skills-grid" style="margin-bottom:2.5rem;">
+          <div class="skill-item" data-reveal data-delay="1">VR / AR / MR Development</div>
+          <div class="skill-item" data-reveal data-delay="2">Unity 2D / 3D</div>
+          <div class="skill-item" data-reveal data-delay="3">C# / C++ / Python</div>
+          <div class="skill-item" data-reveal data-delay="4">Narrative &amp; Systems Design</div>
+          <div class="skill-item" data-reveal data-delay="1">GDD &amp; Documentation</div>
+          <div class="skill-item" data-reveal data-delay="2">Project Lead</div>
+          <div class="skill-item" data-reveal data-delay="3">360° &amp; Cinematic Production</div>
+          <div class="skill-item" data-reveal data-delay="4">Cross-Dept. Communication</div>
+        </div>
+
+        <p class="section__label" style="letter-spacing:.12em;text-transform:none;font-size:.85rem;color:var(--text-muted);margin-bottom:1rem;" data-reveal>Tools</p>
+        <div class="skills-grid">
+          <div class="skill-item" data-reveal data-delay="1">Unity / Unreal Engine</div>
+          <div class="skill-item" data-reveal data-delay="2">Visual Studio / VS Code</div>
+          <div class="skill-item" data-reveal data-delay="3">Adobe Cloud</div>
+          <div class="skill-item" data-reveal data-delay="4">Perforce / GitHub</div>
+          <div class="skill-item" data-reveal data-delay="1">ClickUp / Jira / Miro</div>
+          <div class="skill-item" data-reveal data-delay="2">Microsoft / Google Suites</div>
+          <div class="skill-item" data-reveal data-delay="3">Clockify</div>
+          <div class="skill-item" data-reveal data-delay="4">Canva</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER / CONTACT
+  ══════════════════════════════════════════════════════ -->
+  <footer class="footer" id="contact" aria-label="Contact and footer">
+    <img src="images/branch.svg" alt="" aria-hidden="true" class="branch branch--footer"/>
+
+    <p class="footer__name">Caius Ruscella</p>
+    <p class="footer__title">Narrative Designer &amp; Game Developer</p>
+
+    <ul class="footer__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="game-projects.html">Game Projects</a></li>
+      <li><a href="narrative-projects.html">Narrative Projects</a></li>
+    </ul>
+
+    <div class="footer__social">
+      <!-- ▼▼▼ REPLACE: update LinkedIn URL to your actual profile ▼▼▼ -->
+      <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+      <a href="mailto:cruscella@ruscellaimmersive.com">Email</a>
+      <a href="https://www.caiusruscella.dev">Website</a>
+    </div>
+
+    <p class="footer__copy">&copy; 2026 Caius Ruscella · Ruscella Immersive LLC</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 700" fill="none">
+
+  <!-- ── Branches ────────────────────────────────────────── -->
+  <!-- Main trunk: rises from bottom-right, curves upper-left -->
+  <path d="M 500 700 C 475 630 440 555 405 475 C 370 395 335 330 290 265 C 255 210 220 165 185 115"
+        stroke="#5a2e35" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Branch A: breaks right from trunk around mid-point -->
+  <path d="M 340 340 C 378 315 418 295 455 272"
+        stroke="#5a2e35" stroke-width="7.5" stroke-linecap="round"/>
+
+  <!-- Branch B: upper-mid, goes right -->
+  <path d="M 265 240 C 308 215 350 196 390 175"
+        stroke="#5a2e35" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Branch C: near top, goes upper-right -->
+  <path d="M 200 140 C 234 112 268  88 298  62"
+        stroke="#5a2e35" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Branch D: small twig off Branch A -->
+  <path d="M 420 285 C 445 265 465 248 480 226"
+        stroke="#5a2e35" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Branch E: lower-right off main trunk -->
+  <path d="M 395 445 C 430 420 460 398 488 372"
+        stroke="#5a2e35" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- ── Blossom helper: each cluster = 5 petals + center ─── -->
+
+  <!-- Cluster 1 — top of trunk / Branch C area (195, 118) -->
+  <g transform="translate(185,115)">
+    <ellipse cx="0" cy="-10" rx="6" ry="9.5" fill="#fbd6db" opacity="0.92"/>
+    <ellipse cx="0" cy="-10" rx="6" ry="9.5" fill="#f5eeea" opacity="0.88" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-10" rx="6" ry="9.5" fill="#fbd6db" opacity="0.92" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-10" rx="6" ry="9.5" fill="#f5eeea" opacity="0.85" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-10" rx="6" ry="9.5" fill="#fbd6db" opacity="0.90" transform="rotate(288)"/>
+    <circle  cx="0" cy="0"  r="3.5" fill="#f2afb8"/>
+  </g>
+
+  <!-- Cluster 2 — end of Branch C (298, 62) -->
+  <g transform="translate(298,62)">
+    <ellipse cx="0" cy="-9" rx="5.5" ry="8.5" fill="#f5eeea"  opacity="0.9"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="8.5" fill="#fbd6db"  opacity="0.88" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="8.5" fill="#f5eeea"  opacity="0.9"  transform="rotate(144)"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="8.5" fill="#fbd6db"  opacity="0.85" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="8.5" fill="#f5eeea"  opacity="0.88" transform="rotate(288)"/>
+    <circle  cx="0" cy="0" r="3" fill="#f2afb8"/>
+  </g>
+
+  <!-- Cluster 3 — along Branch C, mid (240, 100) -->
+  <g transform="translate(240,100) rotate(15)">
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#fbd6db" opacity="0.85"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#fbd6db" opacity="0.82" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#f5eeea" opacity="0.88" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#fbd6db" opacity="0.85" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#f5eeea" opacity="0.80" transform="rotate(288)"/>
+    <circle  cx="0" cy="0" r="3" fill="#f2afb8"/>
+  </g>
+
+  <!-- Cluster 4 — end of Branch B (390, 175) -->
+  <g transform="translate(390,175) rotate(-10)">
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#f5eeea" opacity="0.90"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#fbd6db" opacity="0.88" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#f5eeea" opacity="0.86" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#fbd6db" opacity="0.90" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#f5eeea" opacity="0.85" transform="rotate(288)"/>
+    <circle  cx="0" cy="0" r="3" fill="#f2afb8"/>
+  </g>
+
+  <!-- Cluster 5 — mid Branch B (330, 205) -->
+  <g transform="translate(330,205) rotate(20)">
+    <ellipse cx="0" cy="-7.5" rx="5" ry="7.5" fill="#fbd6db" opacity="0.80"/>
+    <ellipse cx="0" cy="-7.5" rx="5" ry="7.5" fill="#f5eeea" opacity="0.82" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-7.5" rx="5" ry="7.5" fill="#fbd6db" opacity="0.80" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-7.5" rx="5" ry="7.5" fill="#f5eeea" opacity="0.78" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-7.5" rx="5" ry="7.5" fill="#fbd6db" opacity="0.82" transform="rotate(288)"/>
+    <circle  cx="0" cy="0" r="2.8" fill="#f2afb8"/>
+  </g>
+
+  <!-- Cluster 6 — end of Branch D (480, 226) -->
+  <g transform="translate(478,225) rotate(-5)">
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#fbd6db" opacity="0.88"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#f5eeea" opacity="0.85" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#fbd6db" opacity="0.88" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#f5eeea" opacity="0.82" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#fbd6db" opacity="0.86" transform="rotate(288)"/>
+    <circle  cx="0" cy="0" r="2.8" fill="#f2afb8"/>
+  </g>
+
+  <!-- Cluster 7 — end of Branch A (455, 272) -->
+  <g transform="translate(454,272) rotate(8)">
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#f5eeea" opacity="0.88"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#fbd6db" opacity="0.86" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#f5eeea" opacity="0.90" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#fbd6db" opacity="0.84" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-9" rx="5.5" ry="9" fill="#f5eeea" opacity="0.88" transform="rotate(288)"/>
+    <circle  cx="0" cy="0" r="3" fill="#f2afb8"/>
+  </g>
+
+  <!-- Cluster 8 — along Branch A mid (405, 305) -->
+  <g transform="translate(405,305) rotate(-15)">
+    <ellipse cx="0" cy="-7.5" rx="4.5" ry="7.5" fill="#fbd6db" opacity="0.78"/>
+    <ellipse cx="0" cy="-7.5" rx="4.5" ry="7.5" fill="#fbd6db" opacity="0.75" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-7.5" rx="4.5" ry="7.5" fill="#f5eeea" opacity="0.80" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-7.5" rx="4.5" ry="7.5" fill="#fbd6db" opacity="0.78" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-7.5" rx="4.5" ry="7.5" fill="#f5eeea" opacity="0.75" transform="rotate(288)"/>
+    <circle  cx="0" cy="0" r="2.5" fill="#f2afb8"/>
+  </g>
+
+  <!-- Cluster 9 — end of Branch E (488, 372) -->
+  <g transform="translate(487,372) rotate(12)">
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#fbd6db" opacity="0.82"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#f5eeea" opacity="0.80" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#fbd6db" opacity="0.84" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#f5eeea" opacity="0.78" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#fbd6db" opacity="0.82" transform="rotate(288)"/>
+    <circle  cx="0" cy="0" r="2.8" fill="#f2afb8"/>
+  </g>
+
+  <!-- Cluster 10 — trunk mid-lower (340, 340) junction -->
+  <g transform="translate(340,340) rotate(-20)">
+    <ellipse cx="0" cy="-7" rx="4.5" ry="7" fill="#f5eeea" opacity="0.72"/>
+    <ellipse cx="0" cy="-7" rx="4.5" ry="7" fill="#fbd6db" opacity="0.70" transform="rotate(72)"/>
+    <ellipse cx="0" cy="-7" rx="4.5" ry="7" fill="#f5eeea" opacity="0.74" transform="rotate(144)"/>
+    <ellipse cx="0" cy="-7" rx="4.5" ry="7" fill="#fbd6db" opacity="0.70" transform="rotate(216)"/>
+    <ellipse cx="0" cy="-7" rx="4.5" ry="7" fill="#f5eeea" opacity="0.72" transform="rotate(288)"/>
+    <circle  cx="0" cy="0" r="2.5" fill="#f2afb8"/>
+  </g>
+
+  <!-- ── Scattered buds ────────────────────────────────────── -->
+  <ellipse cx="215" cy="158" rx="4"   ry="6"   fill="#f2afb8" opacity="0.70" transform="rotate(-30 215 158)"/>
+  <ellipse cx="268" cy="135" rx="3.5" ry="5.5" fill="#f2afb8" opacity="0.65" transform="rotate(20  268 135)"/>
+  <ellipse cx="362" cy="220" rx="3.5" ry="5.5" fill="#f2afb8" opacity="0.60" transform="rotate(-15 362 220)"/>
+  <ellipse cx="446" cy="258" rx="3"   ry="5"   fill="#f2afb8" opacity="0.60" transform="rotate(10  446 258)"/>
+  <ellipse cx="465" cy="300" rx="3"   ry="5"   fill="#fbd6db" opacity="0.55" transform="rotate(-25 465 300)"/>
+  <ellipse cx="430" cy="390" rx="3"   ry="5"   fill="#f2afb8" opacity="0.55" transform="rotate(15  430 390)"/>
+  <ellipse cx="310" cy="175" rx="3.5" ry="5.5" fill="#fbd6db" opacity="0.62" transform="rotate(-10 310 175)"/>
+  <ellipse cx="254" cy="198" rx="3"   ry="4.5" fill="#f2afb8" opacity="0.58" transform="rotate(25  254 198)"/>
+
+</svg>

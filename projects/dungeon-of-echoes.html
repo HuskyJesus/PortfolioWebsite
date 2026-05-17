@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dungeon of Echoes - Caius Ruscella</title>
+  <meta name="description" content="Dungeon of Echoes - a 2D roguelike dungeon crawler built in Unity by Caius Ruscella."/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body>
+
+  <div class="petals" aria-hidden="true"></div>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav__logo">Caius Ruscella</a>
+    <ul class="nav__links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../game-projects.html">Game Projects</a></li>
+      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav__mobile" aria-label="Mobile navigation">
+    <a href="../index.html">Home</a>
+    <a href="../game-projects.html">Game Projects</a>
+    <a href="../narrative-projects.html">Narrative Projects</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <div class="project-banner">
+      <!-- ▼▼▼ REPLACE: <img src="../images/doe-banner.jpg" alt="Dungeon of Echoes"/> ▼▼▼ -->
+      <span class="project-banner-placeholder">[ Dungeon of Echoes - banner image ]</span>
+      <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+      <img src="../images/branch.svg" alt="" aria-hidden="true"
+           style="position:absolute;bottom:0;right:0;width:min(35%,320px);opacity:.18;pointer-events:none;"/>
+    </div>
+
+    <div class="project-layout">
+
+      <article class="project-main">
+        <a href="../game-projects.html" class="project-main__back">← Game Projects</a>
+
+        <h1 class="project-main__title" data-reveal>Dungeon of Echoes</h1>
+        <p class="project-main__meta" data-reveal>
+          Solo Project &nbsp;·&nbsp; Unity / C# &nbsp;·&nbsp; 2D Roguelike
+        </p>
+
+        <p class="project-main__desc" data-reveal>
+          A 2D roguelike dungeon crawler built from scratch in Unity using C#. Every system -
+          from player combat to procedural dungeon generation - was designed and implemented solo,
+          with a focus on satisfying moment-to-moment gameplay and replayability through item-driven builds.
+        </p>
+
+        <p class="project-section-label" data-reveal>What I Built</p>
+        <ul data-reveal style="color:var(--text-secondary);padding-left:1.25rem;line-height:2;">
+          <li>Player combat systems</li>
+          <li>Enemy AI and boss AI</li>
+          <li>Procedural dungeon generation</li>
+          <li>Item-driven stat system</li>
+          <li>Projectile system</li>
+        </ul>
+
+        <!-- ▼▼▼ REPLACE: fill in design notes, challenges, learnings ▼▼▼ -->
+        <p class="project-section-label" data-reveal>Design Notes</p>
+        <p data-reveal style="color:var(--text-secondary);">
+          Add any notes here about your design decisions, challenges you overcame, or what you
+          learned building this project. What would you do differently? What are you most proud of?
+        </p>
+        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+
+        <p class="project-section-label" data-reveal>Screenshots</p>
+        <div class="project-gallery" data-reveal>
+          <!-- ▼▼▼ REPLACE each placeholder with <img src="../images/doe-ss1.jpg" alt="..."/> ▼▼▼ -->
+          <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 1 ]</div></div>
+          <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 2 ]</div></div>
+          <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 3 ]</div></div>
+          <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 4 ]</div></div>
+          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+        </div>
+      </article>
+
+      <aside class="project-sidebar">
+        <div class="sidebar-card">
+          <p class="sidebar-card__label">Project Details</p>
+          <dl>
+            <div class="sidebar-card__row"><dt>Type</dt>      <dd>2D Roguelike</dd></div>
+            <div class="sidebar-card__row"><dt>Engine</dt>    <dd>Unity</dd></div>
+            <div class="sidebar-card__row"><dt>Language</dt>  <dd>C#</dd></div>
+            <div class="sidebar-card__row"><dt>Role</dt>      <dd>Solo Developer</dd></div>
+            <!-- ▼▼▼ REPLACE: add year / completion date ▼▼▼ -->
+            <div class="sidebar-card__row"><dt>Year</dt>      <dd>[ Year ]</dd></div>
+            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+          </dl>
+        </div>
+
+        <div class="sidebar-card">
+          <p class="sidebar-card__label">Skills Used</p>
+          <dl>
+            <div class="sidebar-card__row"><dt>Unity 2D</dt>            <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>C# Programming</dt>      <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>AI / Pathfinding</dt>    <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Procedural Generation</dt><dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Systems Design</dt>      <dd>✓</dd></div>
+          </dl>
+        </div>
+
+        <div class="sidebar-card sidebar-links">
+          <!-- ▼▼▼ REPLACE: add links to itch.io, GitHub, trailer, etc. ▼▼▼ -->
+          <!-- <a href="https://itch.io/YOUR-LINK" target="_blank" rel="noopener" class="btn btn--primary">Play on itch.io</a> -->
+          <!-- <a href="https://github.com/YOUR-REPO" target="_blank" rel="noopener" class="btn btn--outline">GitHub Repo</a> -->
+          <p style="font-size:.8rem;color:var(--text-muted);text-align:center;">Add project links above.</p>
+          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+        </div>
+      </aside>
+    </div>
+
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <img src="../images/branch.svg" alt="" aria-hidden="true" class="branch branch--footer"/>
+    <p class="footer__name">Caius Ruscella</p>
+    <p class="footer__title">Narrative Designer &amp; Game Developer</p>
+    <ul class="footer__nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../game-projects.html">Game Projects</a></li>
+      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+    </ul>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:cruscella@ruscellaimmersive.com">Email</a>
+    </div>
+    <p class="footer__copy">&copy; 2026 Caius Ruscella · Ruscella Immersive LLC</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
