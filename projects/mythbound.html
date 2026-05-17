@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -13,13 +13,13 @@
 
   <div class="petals" aria-hidden="true"></div>
 
-  <!-- ── Navigation ──────────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="../index.html" class="nav__logo">Caius Ruscella</a>
     <ul class="nav__links">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../game-projects.html">Game Projects</a></li>
-      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../technical.html">Technical</a></li>
+      <li><a href="../other-works.html">Other Works</a></li>
       <li><a href="../index.html#about">About</a></li>
       <li><a href="../index.html#contact">Contact</a></li>
     </ul>
@@ -29,63 +29,41 @@
   </nav>
   <nav class="nav__mobile" aria-label="Mobile navigation">
     <a href="../index.html">Home</a>
-    <a href="../game-projects.html">Game Projects</a>
-    <a href="../narrative-projects.html">Narrative Projects</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../technical.html">Technical</a>
+    <a href="../other-works.html">Other Works</a>
     <a href="../index.html#about">About</a>
     <a href="../index.html#contact">Contact</a>
   </nav>
 
   <main>
 
-    <!-- ── Banner Image ────────────────────────────────────── -->
-    <div class="project-banner">
-      <!-- ▼▼▼ REPLACE: swap placeholder with your banner image ▼▼▼ -->
-      <!-- <img src="../images/mythbound-banner.jpg" alt="Mythbound - key art"/> -->
-      <span class="project-banner-placeholder">[ Mythbound - banner image ]</span>
-      <!-- ▲▲▲ END REPLACE ▲▲▲ -->
-      <img src="../images/branch.svg" alt="" aria-hidden="true"
-           style="position:absolute;bottom:0;right:0;width:min(35%,320px);opacity:.18;pointer-events:none;"/>
+    <!-- ── Trailer / Video at top ────────────────────────────── -->
+    <div class="project-trailer">
+      <div class="project-trailer__inner">
+        <!-- ▼▼▼ REPLACE: paste YouTube embed or <video> tag here ▼▼▼ -->
+        <!-- Example:
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="Mythbound trailer"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        -->
+        <span class="project-trailer__placeholder">[ Add trailer or gameplay video here ]</span>
+        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+      </div>
     </div>
 
-    <!-- ── Project Content ─────────────────────────────────── -->
     <div class="project-layout">
 
-      <!-- Main column -->
       <article class="project-main">
-        <a href="../game-projects.html" class="project-main__back">← Game Projects</a>
+        <a href="../projects.html" class="project-main__back">← Projects</a>
 
         <h1 class="project-main__title" data-reveal>Mythbound</h1>
         <p class="project-main__meta" data-reveal>
-          Skaldforge &nbsp;·&nbsp; Design Lead &amp; Technical Designer &nbsp;·&nbsp; October 2025 - Present
+          Skaldforge &nbsp;·&nbsp; Design Lead &amp; Technical Designer &nbsp;·&nbsp; Narrative Designer &nbsp;·&nbsp; October 2025 - Present
         </p>
 
-        <p class="project-main__desc" data-reveal>
-          Mythbound is a fantasy action title in active development at Skaldforge. As Design Lead,
-          I own the full design pipeline - from high-level systems concepting through documentation,
-          review, and handoff to engineering and level design teams.
-        </p>
-
-        <!-- Overview -->
-        <p class="project-section-label" data-reveal>Overview</p>
-        <p data-reveal style="color:var(--text-secondary);">
-          My responsibilities span gameplay systems design, narrative production, and cross-discipline
-          production support. I define the feel of combat, character momentum, ability kits, and
-          progression loops - then translate those decisions into structured GDD documentation and
-          flowcharts that the full team can execute against.
-        </p>
-
-        <!-- Responsibilities -->
-        <p class="project-section-label" data-reveal>Key Responsibilities</p>
-        <ul data-reveal style="color:var(--text-secondary);padding-left:1.25rem;line-height:2;">
-          <li>Lead gameplay and systems design - combat, momentum-based movement, character abilities, and progression</li>
-          <li>Author and maintain GDD documentation, system flowcharts, and design specifications</li>
-          <li>Write bark sheet libraries and quest scripts covering story beats and reactive in-world dialogue</li>
-          <li>Create gameplay balance spreadsheets and lead weekly design reviews</li>
-          <li>Translate design goals into clear, actionable tasks for technical and level design teams</li>
-          <li>Support cross-discipline production and flag scope risks early</li>
-        </ul>
-
-        <!-- Screenshots -->
+        <!-- Screenshots / documentation before description -->
         <p class="project-section-label" data-reveal>Screenshots &amp; Documentation</p>
         <div class="project-gallery" data-reveal>
           <!-- ▼▼▼ REPLACE each item: swap placeholder divs with <img> tags ▼▼▼ -->
@@ -104,51 +82,57 @@
           <!-- ▲▲▲ END REPLACE ▲▲▲ -->
         </div>
 
-        <!-- Narrative notes -->
+        <p class="project-section-label" data-reveal>Overview</p>
+        <p class="project-main__desc" data-reveal>
+          Mythbound is a fantasy action title in active development at Skaldforge. As Design Lead,
+          I own the full design pipeline - from high-level systems concepting through documentation,
+          review, and handoff to engineering and level design teams.
+        </p>
+
+        <p class="project-section-label" data-reveal>Key Responsibilities</p>
+        <ul data-reveal style="color:var(--text-primary);padding-left:1.25rem;line-height:2;">
+          <li>Lead gameplay and systems design - combat, momentum-based movement, character abilities, and progression</li>
+          <li>Author and maintain GDD documentation, system flowcharts, and design specifications</li>
+          <li>Write bark sheet libraries and quest scripts covering story beats and reactive in-world dialogue</li>
+          <li>Create gameplay balance spreadsheets and lead weekly design reviews</li>
+          <li>Translate design goals into clear, actionable tasks for technical and level design teams</li>
+          <li>Support cross-discipline production and flag scope risks early</li>
+        </ul>
+
         <p class="project-section-label" data-reveal>Narrative Work</p>
-        <p data-reveal style="color:var(--text-secondary);">
+        <p data-reveal style="color:var(--text-primary);">
           <!-- ▼▼▼ REPLACE: describe your narrative contributions in more detail ▼▼▼ -->
           Beyond systems documentation, I write all bark sheets for combat encounters, ambient
           exploration, and story-critical moments. This includes voice direction notes, context
           tags for the audio team, and branching logic where applicable.
           <!-- ▲▲▲ END REPLACE ▲▲▲ -->
         </p>
+
       </article>
 
-      <!-- Sidebar -->
       <aside class="project-sidebar">
 
         <div class="sidebar-card">
           <p class="sidebar-card__label">Project Details</p>
           <dl>
-            <div class="sidebar-card__row">
-              <dt>Studio</dt>   <dd>Skaldforge</dd>
-            </div>
-            <div class="sidebar-card__row">
-              <dt>Role</dt>     <dd>Design Lead &amp; Technical Designer</dd>
-            </div>
-            <div class="sidebar-card__row">
-              <dt>Timeline</dt> <dd>Oct 2025 - Present</dd>
-            </div>
-            <div class="sidebar-card__row">
-              <dt>Type</dt>     <dd>Fantasy Action</dd>
-            </div>
-            <div class="sidebar-card__row">
-              <!-- ▼▼▼ REPLACE: update engine if confirmed ▼▼▼ -->
-              <dt>Engine</dt>   <dd>TBD</dd>
-              <!-- ▲▲▲ END REPLACE ▲▲▲ -->
-            </div>
+            <div class="sidebar-card__row"><dt>Company</dt>   <dd>Skaldforge</dd></div>
+            <div class="sidebar-card__row"><dt>Role</dt>      <dd>Design Lead &amp; Technical Designer</dd></div>
+            <div class="sidebar-card__row"><dt>Timeline</dt>  <dd>Oct 2025 - Present</dd></div>
+            <div class="sidebar-card__row"><dt>Type</dt>      <dd>Fantasy Action</dd></div>
+            <!-- ▼▼▼ REPLACE: update engine if confirmed ▼▼▼ -->
+            <div class="sidebar-card__row"><dt>Engine</dt>    <dd>TBD</dd></div>
+            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
           </dl>
         </div>
 
         <div class="sidebar-card">
           <p class="sidebar-card__label">Skills Used</p>
           <dl>
-            <div class="sidebar-card__row"><dt>Systems Design</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>GDD Writing</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Bark Sheets</dt><dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Systems Design</dt>      <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>GDD Writing</dt>         <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Bark Sheets</dt>         <dd>✓</dd></div>
             <div class="sidebar-card__row"><dt>Balance Spreadsheets</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Design Reviews</dt><dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Design Reviews</dt>      <dd>✓</dd></div>
           </dl>
         </div>
 
@@ -173,8 +157,9 @@
     <p class="footer__title">Narrative Designer &amp; Game Developer</p>
     <ul class="footer__nav">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../game-projects.html">Game Projects</a></li>
-      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../technical.html">Technical</a></li>
+      <li><a href="../other-works.html">Other Works</a></li>
     </ul>
     <div class="footer__social">
       <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>

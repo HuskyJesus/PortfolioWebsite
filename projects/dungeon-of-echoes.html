@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -17,8 +17,9 @@
     <a href="../index.html" class="nav__logo">Caius Ruscella</a>
     <ul class="nav__links">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../game-projects.html">Game Projects</a></li>
-      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../technical.html">Technical</a></li>
+      <li><a href="../other-works.html">Other Works</a></li>
       <li><a href="../index.html#about">About</a></li>
       <li><a href="../index.html#contact">Contact</a></li>
     </ul>
@@ -28,30 +29,50 @@
   </nav>
   <nav class="nav__mobile" aria-label="Mobile navigation">
     <a href="../index.html">Home</a>
-    <a href="../game-projects.html">Game Projects</a>
-    <a href="../narrative-projects.html">Narrative Projects</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../technical.html">Technical</a>
+    <a href="../other-works.html">Other Works</a>
     <a href="../index.html#about">About</a>
     <a href="../index.html#contact">Contact</a>
   </nav>
 
   <main>
 
-    <div class="project-banner">
-      <img src="../images/DoETitle.png" alt="Dungeon of Echoes - title"/>
-      <img src="../images/branch.svg" alt="" aria-hidden="true"
-           style="position:absolute;bottom:0;right:0;width:min(35%,320px);opacity:.18;pointer-events:none;"/>
+    <!-- ── Trailer / Video at top ────────────────────────────── -->
+    <div class="project-trailer">
+      <div class="project-trailer__inner">
+        <!-- ▼▼▼ REPLACE: paste YouTube embed or <video> tag here ▼▼▼ -->
+        <!-- Example:
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="Dungeon of Echoes trailer"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        -->
+        <span class="project-trailer__placeholder">[ Add trailer or gameplay video here ]</span>
+        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+      </div>
     </div>
 
     <div class="project-layout">
 
       <article class="project-main">
-        <a href="../game-projects.html" class="project-main__back">← Game Projects</a>
+        <a href="../projects.html" class="project-main__back">← Projects</a>
 
         <h1 class="project-main__title" data-reveal>Dungeon of Echoes</h1>
         <p class="project-main__meta" data-reveal>
-          Solo Project &nbsp;·&nbsp; Unity / C# &nbsp;·&nbsp; 2D Roguelike
+          Solo Project &nbsp;·&nbsp; Unity / C# &nbsp;·&nbsp; Technical Designer
         </p>
 
+        <!-- Screenshots before description -->
+        <p class="project-section-label" data-reveal>Screenshots</p>
+        <div class="project-gallery" data-reveal>
+          <div class="project-gallery__item"><img src="../images/DoE1.gif" alt="Dungeon of Echoes - gameplay 1"/></div>
+          <div class="project-gallery__item"><img src="../images/DoE2.gif" alt="Dungeon of Echoes - gameplay 2"/></div>
+          <div class="project-gallery__item"><img src="../images/DoE3.gif" alt="Dungeon of Echoes - gameplay 3"/></div>
+          <div class="project-gallery__item"><img src="../images/DoE4.gif" alt="Dungeon of Echoes - gameplay 4"/></div>
+        </div>
+
+        <p class="project-section-label" data-reveal>Overview</p>
         <p class="project-main__desc" data-reveal>
           A 2D roguelike dungeon crawler built from scratch in Unity using C#. Every system -
           from player combat to procedural dungeon generation - was designed and implemented solo,
@@ -59,7 +80,7 @@
         </p>
 
         <p class="project-section-label" data-reveal>What I Built</p>
-        <ul data-reveal style="color:var(--text-secondary);padding-left:1.25rem;line-height:2;">
+        <ul data-reveal style="color:var(--text-primary);padding-left:1.25rem;line-height:2;">
           <li>Player combat systems</li>
           <li>Enemy AI and boss AI</li>
           <li>Procedural dungeon generation</li>
@@ -69,19 +90,12 @@
 
         <!-- ▼▼▼ REPLACE: fill in design notes, challenges, learnings ▼▼▼ -->
         <p class="project-section-label" data-reveal>Design Notes</p>
-        <p data-reveal style="color:var(--text-secondary);">
+        <p data-reveal style="color:var(--text-primary);">
           Add any notes here about your design decisions, challenges you overcame, or what you
           learned building this project. What would you do differently? What are you most proud of?
         </p>
         <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
-        <p class="project-section-label" data-reveal>Screenshots</p>
-        <div class="project-gallery" data-reveal>
-          <div class="project-gallery__item"><img src="../images/DoE1.gif" alt="Dungeon of Echoes - gameplay 1"/></div>
-          <div class="project-gallery__item"><img src="../images/DoE2.gif" alt="Dungeon of Echoes - gameplay 2"/></div>
-          <div class="project-gallery__item"><img src="../images/DoE3.gif" alt="Dungeon of Echoes - gameplay 3"/></div>
-          <div class="project-gallery__item"><img src="../images/DoE4.gif" alt="Dungeon of Echoes - gameplay 4"/></div>
-        </div>
       </article>
 
       <aside class="project-sidebar">
@@ -101,11 +115,11 @@
         <div class="sidebar-card">
           <p class="sidebar-card__label">Skills Used</p>
           <dl>
-            <div class="sidebar-card__row"><dt>Unity 2D</dt>            <dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>C# Programming</dt>      <dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>AI / Pathfinding</dt>    <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Unity 2D</dt>             <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>C# Programming</dt>       <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>AI / Pathfinding</dt>     <dd>✓</dd></div>
             <div class="sidebar-card__row"><dt>Procedural Generation</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Systems Design</dt>      <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Systems Design</dt>       <dd>✓</dd></div>
           </dl>
         </div>
 
@@ -127,8 +141,9 @@
     <p class="footer__title">Narrative Designer &amp; Game Developer</p>
     <ul class="footer__nav">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../game-projects.html">Game Projects</a></li>
-      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../technical.html">Technical</a></li>
+      <li><a href="../other-works.html">Other Works</a></li>
     </ul>
     <div class="footer__social">
       <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>

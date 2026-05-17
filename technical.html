@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technical Work - Caius Ruscella</title>
+  <meta name="description" content="Technical design and code work by Caius Ruscella - C#, Unity systems, and programming samples."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <style>
+    .code-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2rem;
+      overflow-x: auto;
+    }
+    .code-block__label {
+      font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--rose); margin-bottom: 0.75rem;
+    }
+    .code-block__title {
+      font-family: var(--font-display);
+      font-size: 1.15rem; color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+    .code-block__desc {
+      font-size: 0.9rem; color: var(--text-primary);
+      margin-bottom: 1.25rem;
+    }
+    .code-block pre {
+      font-family: 'Consolas', 'Cascadia Code', 'Courier New', monospace;
+      font-size: 0.82rem;
+      color: var(--pink-warm);
+      line-height: 1.7;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    .code-block pre .comment { color: var(--text-muted); }
+    .code-block pre .keyword { color: var(--pink-mid); }
+    .code-block pre .string  { color: #a8c89a; }
+    .code-block__placeholder {
+      font-size: 0.8rem; color: var(--text-muted);
+      letter-spacing: 0.1em; text-align: center;
+      padding: 2.5rem; border: 1px dashed var(--border);
+      border-radius: 6px; margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="petals" aria-hidden="true"></div>
+
+  <!-- ── Navigation ──────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">Caius Ruscella</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="technical.html">Technical</a></li>
+      <li><a href="other-works.html">Other Works</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav__mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="technical.html">Technical</a>
+    <a href="other-works.html">Other Works</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ── Page Hero ───────────────────────────────────────── -->
+    <section class="page-hero" aria-label="Technical Work">
+      <img src="images/branch.svg" alt="" aria-hidden="true" class="branch branch--hero-right" style="opacity:.15;"/>
+      <p class="page-hero__label" data-reveal>Portfolio</p>
+      <h1 class="page-hero__title" data-reveal data-delay="1">Technical Work</h1>
+      <p class="page-hero__desc" data-reveal data-delay="2">
+        Code samples and technical design showcasing the programming behind the games.
+        I design systems - I also build them.
+      </p>
+    </section>
+
+    <!-- ── Code Snippets ───────────────────────────────────── -->
+    <section class="section" aria-label="Code samples">
+      <div class="container">
+        <p class="section__label" data-reveal>C# / Unity</p>
+        <h2 class="section__title" data-reveal data-delay="1">Code Samples</h2>
+        <div class="section__divider" data-reveal data-delay="2"></div>
+
+        <!-- ══════════════════════════════════════════════
+             SNIPPET 1 - REPLACE with actual code
+        ══════════════════════════════════════════════ -->
+        <div class="code-block" data-reveal>
+          <p class="code-block__label">Unity / C# · Dungeon of Echoes</p>
+          <p class="code-block__title">Procedural Dungeon Generation</p>
+          <p class="code-block__desc">
+            Room-based dungeon generation using a recursive BSP algorithm. Rooms are placed within
+            leaf nodes and connected by L-shaped corridors.
+          </p>
+          <!-- ▼▼▼ REPLACE: paste your actual code here ▼▼▼ -->
+          <div class="code-block__placeholder">
+            [ Paste code snippet here - see README for formatting tips ]
+          </div>
+          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+        </div>
+
+        <!-- ══════════════════════════════════════════════
+             SNIPPET 2 - REPLACE with actual code
+        ══════════════════════════════════════════════ -->
+        <div class="code-block" data-reveal>
+          <p class="code-block__label">Unity / C# · Dungeon of Echoes</p>
+          <p class="code-block__title">Enemy AI State Machine</p>
+          <p class="code-block__desc">
+            State machine managing patrol, aggro, attack, and death states for dungeon enemies.
+            Uses Unity's NavMesh for pathfinding.
+          </p>
+          <!-- ▼▼▼ REPLACE: paste your actual code here ▼▼▼ -->
+          <div class="code-block__placeholder">
+            [ Paste code snippet here ]
+          </div>
+          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+        </div>
+
+        <!-- ══════════════════════════════════════════════
+             SNIPPET 3 - REPLACE with actual code
+        ══════════════════════════════════════════════ -->
+        <div class="code-block" data-reveal>
+          <p class="code-block__label">Unity / C# · Fright Train</p>
+          <p class="code-block__title">Note Interaction &amp; Trigger System</p>
+          <p class="code-block__desc">
+            Event-driven system handling note pickups, environmental triggers, and progression
+            flags used to build tension through environmental storytelling.
+          </p>
+          <!-- ▼▼▼ REPLACE: paste your actual code here ▼▼▼ -->
+          <div class="code-block__placeholder">
+            [ Paste code snippet here ]
+          </div>
+          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+        </div>
+
+        <!-- ══════════════════════════════════════════════
+             ADD MORE SNIPPETS
+             Duplicate the code-block div above and fill in.
+        ══════════════════════════════════════════════ -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Footer">
+    <img src="images/branch.svg" alt="" aria-hidden="true" class="branch branch--footer"/>
+    <p class="footer__name">Caius Ruscella</p>
+    <p class="footer__title">Narrative Designer &amp; Game Developer</p>
+    <ul class="footer__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="technical.html">Technical</a></li>
+      <li><a href="other-works.html">Other Works</a></li>
+    </ul>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:cruscella@ruscellaimmersive.com">Email</a>
+    </div>
+    <p class="footer__copy">&copy; 2026 Caius Ruscella · Ruscella Immersive LLC</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
