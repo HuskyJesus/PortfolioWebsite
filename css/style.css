@@ -347,6 +347,12 @@ p:last-child { margin-bottom: 0; }
   grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
 }
+/* Lone last card in a 2-col grid: center it at column width */
+.cards-grid:not([style]) > .card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: calc(50% - 0.875rem);
+  margin: 0 auto;
+}
 
 .card {
   background: var(--bg-card);
