@@ -176,6 +176,25 @@
   });
 })();
 
+/* ── Video Mute Toggle ──────────────────────────────────────── */
+(function () {
+  document.querySelectorAll('.hero__media, .project-gallery__item').forEach(function (wrap) {
+    var video = wrap.querySelector('video');
+    if (!video) return;
+    var btn = document.createElement('button');
+    btn.className = 'video-mute-btn';
+    btn.setAttribute('aria-label', 'Unmute video');
+    btn.textContent = '\u{1F507}';
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      video.muted = !video.muted;
+      btn.textContent = video.muted ? '\u{1F507}' : '\u{1F50A}';
+      btn.setAttribute('aria-label', video.muted ? 'Unmute video' : 'Mute video');
+    });
+    wrap.appendChild(btn);
+  });
+})();
+
 /* ── Scroll Reveal ──────────────────────────────────────────── */
 (function () {
   const els = document.querySelectorAll('[data-reveal]');

@@ -194,7 +194,7 @@ p:last-child { margin-bottom: 0; }
 
 .section__label {
   font-family: var(--font-body);
-  font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase;
+  font-size: 0.85rem; letter-spacing: 0.22em; text-transform: uppercase;
   color: var(--rose); margin-bottom: 0.6rem;
 }
 .section__title { margin-bottom: 0.75rem; }
@@ -279,6 +279,7 @@ p:last-child { margin-bottom: 0; }
   border-radius: 8px;
   overflow: hidden;
   display: flex; align-items: center; justify-content: center;
+  position: relative;
 }
 .hero__media iframe,
 .hero__media video { width: 100%; height: 100%; border: none; display: block; }
@@ -293,11 +294,11 @@ p:last-child { margin-bottom: 0; }
   font-size: 0.8rem; letter-spacing: 0.28em; text-transform: uppercase;
   color: var(--rose); margin-bottom: 0.9rem;
 }
-.hero__name   { color: var(--pink-light); margin-bottom: 0.3rem; }
+.hero__name   { color: var(--text-secondary); margin-bottom: 0.3rem; }
 .hero__title  {
   font-family: var(--font-body);
   font-size: clamp(1rem, 2.5vw, 1.35rem);
-  color: var(--text-secondary); letter-spacing: 0.06em;
+  color: var(--pink-light); letter-spacing: 0.06em;
   margin-bottom: 1.6rem;
 }
 .hero__bio {
@@ -328,8 +329,8 @@ p:last-child { margin-bottom: 0; }
   font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--rose); margin-bottom: 0.4rem;
 }
-.featured__name   { color: var(--pink-light); margin-bottom: 0.2rem; }
-.featured__role   { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.4rem; }
+.featured__name   { color: var(--text-secondary); margin-bottom: 0.2rem; }
+.featured__role   { font-size: 1.05rem; color: var(--pink-light); margin-bottom: 1.4rem; }
 .featured__desc   { color: var(--text-primary); margin-bottom: 1.75rem; }
 .featured__tags   { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.75rem; }
 
@@ -393,8 +394,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .card__body   { padding: 1.4rem 1.5rem; flex: 1; display: flex; flex-direction: column; }
-.card__title  { font-family: var(--font-display); font-size: 1.4rem; color: var(--text-secondary); margin-bottom: 0.3rem; }
-.card__meta   { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.04em; margin-bottom: 0.75rem; }
+.card__title  { font-family: var(--font-display); font-size: 1.4rem; color: var(--text-muted); margin-bottom: 0.3rem; }
+.card__meta   { font-size: 0.78rem; color: var(--text-secondary); letter-spacing: 0.04em; margin-bottom: 0.75rem; }
 .card__desc   { font-size: 0.93rem; color: var(--text-primary); flex: 1; margin-bottom: 1.2rem; }
 .card__link   { font-size: 0.8rem; color: var(--rose); letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
 .card__link:hover { color: var(--pink-light); }
@@ -514,6 +515,22 @@ p:last-child { margin-bottom: 0; }
 .resume-embed__frame object,
 .resume-embed__frame iframe { width: 100%; height: 100%; border: none; display: block; }
 
+/* ── Video Mute Button ──────────────────────────────────────── */
+.video-mute-btn {
+  position: absolute; bottom: 0.6rem; right: 0.6rem; z-index: 10;
+  background: rgba(13, 6, 8, 0.72);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--pink-light);
+  font-size: 0.78rem; letter-spacing: 0.04em;
+  padding: 0.28rem 0.6rem;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+}
+.video-mute-btn:hover { background: rgba(162, 73, 87, 0.45); color: var(--pink-warm); }
+
 /* ── Image Lightbox ─────────────────────────────────────────── */
 .lightbox-overlay {
   display: none;
@@ -604,8 +621,8 @@ p:last-child { margin-bottom: 0; }
 }
 .project-main__back:hover { color: var(--pink-light); }
 
-.project-main__title   { color: var(--pink-light); margin-bottom: 0.35rem; }
-.project-main__meta    { font-size: 1.05rem; color: var(--text-muted); letter-spacing: 0.04em; margin-bottom: 1.5rem; }
+.project-main__title   { color: var(--text-secondary); margin-bottom: 0.35rem; }
+.project-main__meta    { font-size: 1.05rem; color: var(--pink-light); letter-spacing: 0.04em; margin-bottom: 1.5rem; }
 .project-main__desc    { color: var(--text-primary); margin-bottom: 2rem; }
 
 .project-section-label {
