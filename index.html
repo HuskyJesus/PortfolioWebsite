@@ -11,10 +11,10 @@
 </head>
 <body>
 
-  <!-- ── Falling Petals ──────────────────────────────────── -->
+  <!-- Falling Petals -->
   <div class="petals" aria-hidden="true"></div>
 
-  <!-- ── Navigation ──────────────────────────────────────── -->
+  <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="index.html" class="nav__logo">Caius Ruscella</a>
     <ul class="nav__links">
@@ -40,9 +40,7 @@
 
   <main>
 
-    <!-- ══════════════════════════════════════════════════════
-         HERO
-    ══════════════════════════════════════════════════════ -->
+    <!-- HERO -->
     <section class="hero" aria-label="Introduction">
       <div class="hero__glow" aria-hidden="true"></div>
       <img src="images/branch.svg" alt="" aria-hidden="true" class="branch branch--hero-right"/>
@@ -64,41 +62,29 @@
           </div>
         </div>
 
-        <!-- Right: video / showreel -->
+        <!-- Right: What Do They See? trailer -->
         <div class="hero__media" data-reveal data-delay="3">
-          <!-- ▼▼▼ REPLACE: swap placeholder with YouTube embed or <video> tag ▼▼▼ -->
-          <!-- Example YouTube embed:
-          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                  title="Caius Ruscella showreel"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-          -->
-          <div class="hero__media-placeholder">
-            [ Add showreel video or project slideshow here ]<br/>
-            <small style="color:var(--text-muted);">Replace with YouTube embed or &lt;video&gt; tag</small>
-          </div>
-          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+          <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+            <source src="images/What_Do_They_See_Trailer.mov" type="video/quicktime"/>
+            <source src="images/What_Do_They_See_Trailer.mov" type="video/mp4"/>
+          </video>
         </div>
 
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════════════════════
-         FEATURED PROJECT - MYTHBOUND
-    ══════════════════════════════════════════════════════ -->
+    <!-- FEATURED PROJECT - MYTHBOUND -->
     <section class="section section--alt featured" id="featured" aria-label="Featured project">
       <div class="container">
         <p class="section__label" data-reveal>Currently Working On</p>
         <div class="featured__inner">
 
-          <!-- ▼▼▼ REPLACE: swap placeholder with banner image or trailer embed ▼▼▼ -->
+          <!-- Replace this placeholder div with an img or iframe once assets are available -->
           <div class="featured__image" data-reveal>
             <div class="featured__image-placeholder">
-              <!-- Replace with: <img src="images/mythbound-banner.jpg" alt="Mythbound key art"/> -->
               [ Mythbound banner image ]
             </div>
           </div>
-          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
           <div data-reveal data-delay="2">
             <p class="featured__kicker">Featured - Active Project</p>
@@ -126,16 +112,14 @@
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════════════════════
-         PROJECT BUCKETS
-    ══════════════════════════════════════════════════════ -->
+    <!-- MY WORK -->
     <section class="section" id="projects" aria-label="Project categories">
       <div class="container">
-        <p class="section__label" data-reveal>My Work</p>
-        <h2 class="section__title" data-reveal data-delay="1">Projects</h2>
+        <p class="section__label" data-reveal>Portfolio</p>
+        <h2 class="section__title" data-reveal data-delay="1">My Work</h2>
         <div class="section__divider" data-reveal data-delay="2"></div>
 
-        <div class="cards-grid">
+        <div class="cards-grid" style="grid-template-columns: repeat(3, 1fr);">
 
           <a href="projects.html" class="card" data-reveal data-delay="1">
             <div class="card__image">
@@ -143,29 +127,42 @@
               <span class="card__badge">5 Projects</span>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Games &amp; Narrative</h3>
-              <p class="card__meta">Unity · Unreal · C# · Systems Design · Narrative</p>
+              <h3 class="card__title">Game Projects</h3>
+              <p class="card__meta">Unity · Unreal · C# · Narrative Design</p>
               <p class="card__desc">
-                Dungeon crawlers, horror games, jam entries, and live studio work - each with
-                gameplay systems and narrative-driven design.
+                Dungeon crawlers, horror games, VR experiences, jam entries, and live studio work.
               </p>
-              <span class="card__link">Browse All Projects →</span>
+              <span class="card__link">Browse Projects →</span>
             </div>
           </a>
 
           <a href="technical.html" class="card" data-reveal data-delay="2">
             <div class="card__image">
-              <div class="card__image-placeholder">[ Technical work image ]</div>
+              <div class="card__image-placeholder">[ Technical work ]</div>
               <span class="card__badge">Code &amp; Systems</span>
             </div>
             <div class="card__body">
               <h3 class="card__title">Technical Work</h3>
-              <p class="card__meta">C# · Unity · Systems Design · Code Snippets</p>
+              <p class="card__meta">C# · Unity · Systems Design</p>
               <p class="card__desc">
-                Code samples and technical design showcases - demonstrating the programming
-                and systems work behind the games.
+                Code samples and technical design showcasing the programming behind the games.
               </p>
               <span class="card__link">View Technical Work →</span>
+            </div>
+          </a>
+
+          <a href="other-works.html" class="card" data-reveal data-delay="3">
+            <div class="card__image">
+              <div class="card__image-placeholder">[ Other works ]</div>
+              <span class="card__badge">Leadership &amp; More</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Other Works</h3>
+              <p class="card__meta">Project Management · Tabletop · More</p>
+              <p class="card__desc">
+                Project management, tabletop design, and other creative work outside games and code.
+              </p>
+              <span class="card__link">View Other Works →</span>
             </div>
           </a>
 
@@ -173,9 +170,7 @@
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════════════════════
-         ABOUT
-    ══════════════════════════════════════════════════════ -->
+    <!-- ABOUT -->
     <section class="section section--alt" id="about" aria-label="About Caius">
       <div class="container">
         <p class="section__label" data-reveal>About Me</p>
@@ -184,12 +179,10 @@
 
         <div class="about__grid">
 
-          <!-- ▼▼▼ REPLACE: swap placeholder with your photo ▼▼▼ -->
+          <!-- Replace placeholder with: <img src="images/caius-photo.jpg" alt="Caius Ruscella"/> -->
           <div class="about__image-wrap" data-reveal>
-            <!-- Replace with: <img src="images/caius-photo.jpg" alt="Caius Ruscella"/> -->
             <p class="about__image-placeholder">[ Photo ]</p>
           </div>
-          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
           <div class="about__text" data-reveal data-delay="2">
             <p>
@@ -229,27 +222,27 @@
           </div>
         </div>
 
-        <!-- ── Embedded Resume ─────────────────────────────── -->
+        <!-- Embedded Resume -->
         <div class="resume-embed" data-reveal>
           <p class="section__label" style="margin-top:0;">Resume</p>
+          <div style="display:flex;gap:1rem;margin-bottom:1.25rem;flex-wrap:wrap;">
+            <a href="resume/Caius-Ruscella-Resume.pdf" target="_blank" rel="noopener" class="btn btn--primary">Download Resume (PDF)</a>
+          </div>
           <div class="resume-embed__frame">
-            <!-- ▼▼▼ REPLACE: update path if resume PDF is in a different location ▼▼▼ -->
+            <!-- Update path if resume PDF is in a different location -->
             <object data="resume/Caius-Ruscella-Resume.pdf" type="application/pdf">
-              <a href="resume/Caius-Ruscella-Resume.pdf" target="_blank" rel="noopener" class="btn btn--outline"
-                 style="margin:2rem auto;display:block;width:fit-content;">
-                Download Resume (PDF)
-              </a>
+              <p style="color:var(--text-muted);text-align:center;padding:2rem;">
+                PDF preview not available in this browser.
+                <a href="resume/Caius-Ruscella-Resume.pdf" target="_blank" rel="noopener" style="color:var(--rose);">Open PDF directly</a>
+              </p>
             </object>
-            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════════════════════
-         SKILLS
-    ══════════════════════════════════════════════════════ -->
+    <!-- SKILLS -->
     <section class="section" aria-label="Skills and tools">
       <div class="container">
         <p class="section__label" data-reveal>What I Bring</p>
@@ -287,9 +280,7 @@
 
   </main>
 
-  <!-- ══════════════════════════════════════════════════════
-       FOOTER / CONTACT
-  ══════════════════════════════════════════════════════ -->
+  <!-- FOOTER / CONTACT -->
   <footer class="footer" id="contact" aria-label="Contact and footer">
     <img src="images/branch.svg" alt="" aria-hidden="true" class="branch branch--footer"/>
 
@@ -304,12 +295,12 @@
     </ul>
 
     <div class="footer__social">
-      <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/caiusruscella" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:cruscella@ruscellaimmersive.com">Email</a>
       <a href="https://www.caiusruscella.dev">Website</a>
     </div>
 
-    <p class="footer__copy">&copy; 2026 Caius Ruscella · Ruscella Immersive LLC</p>
+    <p class="footer__copy">&copy; 2025 Caius Ruscella · Husky Jesus Games</p>
   </footer>
 
   <script src="js/main.js"></script>

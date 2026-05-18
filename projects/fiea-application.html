@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FIEA Application Project - Caius Ruscella</title>
-  <meta name="description" content="FIEA application project by Caius Ruscella - submitted to the Florida Interactive Entertainment Academy graduate program."/>
+  <title>What Do They See? - Caius Ruscella</title>
+  <meta name="description" content="What Do They See? - A short VR experience built for the FIEA graduate application. Players swap colored lenses to reveal hidden objects and uncover secrets."/>
   <link rel="stylesheet" href="../css/style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -38,18 +38,13 @@
 
   <main>
 
-    <!-- ── Trailer at top ────────────────────────────────────── -->
+    <!-- Trailer at top -->
     <div class="project-trailer">
       <div class="project-trailer__inner">
-        <!-- ▼▼▼ REPLACE: paste your trailer YouTube embed or <video> tag here ▼▼▼ -->
-        <!-- Example:
-        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                title="FIEA Application Project trailer"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        -->
-        <span class="project-trailer__placeholder">[ Add project trailer here ]</span>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+        <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
+          <source src="../images/What_Do_They_See_Trailer.mov" type="video/quicktime"/>
+          <source src="../images/What_Do_They_See_Trailer.mov" type="video/mp4"/>
+        </video>
       </div>
     </div>
 
@@ -58,44 +53,55 @@
       <article class="project-main">
         <a href="../projects.html" class="project-main__back">← Projects</a>
 
-        <!-- ▼▼▼ REPLACE: update title and meta with project name ▼▼▼ -->
-        <h1 class="project-main__title" data-reveal>FIEA Application Project</h1>
+        <h1 class="project-main__title" data-reveal>What Do They See?</h1>
         <p class="project-main__meta" data-reveal>
-          Florida Interactive Entertainment Academy &nbsp;·&nbsp; 2025 &nbsp;·&nbsp; Developer &amp; Designer
+          FIEA Application Project &nbsp;·&nbsp; 2025 &nbsp;·&nbsp; Solo Developer &nbsp;·&nbsp; Unity / C# &nbsp;·&nbsp; VR
         </p>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
-        <!-- Screenshots before description -->
-        <!-- ▼▼▼ REPLACE: add screenshots ▼▼▼ -->
+        <p class="project-main__desc" data-reveal>
+          A short first-person VR experience built as part of the FIEA graduate application. Players
+          put on a pair of glasses and swap between three colored lenses - each one revealing a
+          different layer of a hidden world that exists within the same scene. The core mechanic
+          uses custom shaders to selectively show and hide objects depending on which lens is active,
+          creating a puzzle experience built around perception and discovery.
+        </p>
+
+        <!-- Screenshots before everything else -->
         <p class="project-section-label" data-reveal>Screenshots</p>
         <div class="project-gallery" data-reveal>
+          <!-- Replace placeholders with actual screenshots -->
           <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 1 ]</div></div>
           <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 2 ]</div></div>
           <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 3 ]</div></div>
           <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 4 ]</div></div>
         </div>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
-        <!-- ▼▼▼ REPLACE: fill in all sections below ▼▼▼ -->
-        <p class="project-section-label" data-reveal>Overview</p>
-        <p class="project-main__desc" data-reveal>
-          Add a description of the project here - what it is, why you built it, and what it
-          demonstrates about your skills as a designer and developer.
+        <p class="project-section-label" data-reveal>How It Works</p>
+        <p data-reveal style="color:var(--text-primary);">
+          All objects in the experience exist in the scene simultaneously - custom shaders filter
+          what is visible based on the active lens color. Swapping lenses is a physical in-world
+          action: the player reaches up and changes the lens on the glasses they are wearing,
+          revealing a new layer of the environment without loading a new scene.
         </p>
+
+        <p class="project-section-label" data-reveal>Experience Walkthrough</p>
+        <ul data-reveal style="color:var(--text-primary);padding-left:1.25rem;line-height:2.2;">
+          <li><strong style="color:var(--pink-mid);">Red lenses</strong> - The player puts on the glasses and sees a code written in the environment that is invisible without the lens.</li>
+          <li><strong style="color:var(--text-secondary);">Teleport to the desk</strong> - Using the revealed information, the player moves to the next area.</li>
+          <li><strong style="color:var(--pink-mid);">Green lenses</strong> - Swapping to green reveals a book in the world. Picking it up moves a hidden wall, exposing a safe behind it.</li>
+          <li><strong style="color:var(--pink-mid);">Red lenses again</strong> - The player uses the code they memorized to unlock the now-visible safe.</li>
+          <li><strong style="color:var(--pink-mid);">Purple lenses</strong> - The player puts on the final lens, turns around, and is met with a jumpscare.</li>
+        </ul>
 
         <p class="project-section-label" data-reveal>What I Built</p>
         <ul data-reveal style="color:var(--text-primary);padding-left:1.25rem;line-height:2;">
-          <li>[ Add contribution 1 ]</li>
-          <li>[ Add contribution 2 ]</li>
-          <li>[ Add contribution 3 ]</li>
+          <li>Custom shader system that selectively renders objects based on active lens color</li>
+          <li>VR lens-swapping interaction built for headset hand tracking</li>
+          <li>Environmental object interactions - book pickup, hidden wall reveal, safe unlock</li>
+          <li>Teleportation locomotion system</li>
+          <li>Scripted jumpscare sequence with audio and environmental triggers</li>
+          <li>Full level design and environment layout</li>
         </ul>
-
-        <p class="project-section-label" data-reveal>Design Notes</p>
-        <p data-reveal style="color:var(--text-primary);">
-          What design decisions went into this project? What were you trying to prove or
-          demonstrate with your application?
-        </p>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
       </article>
 
@@ -103,33 +109,29 @@
         <div class="sidebar-card">
           <p class="sidebar-card__label">Project Details</p>
           <dl>
-            <!-- ▼▼▼ REPLACE: fill in details ▼▼▼ -->
             <div class="sidebar-card__row"><dt>Context</dt>   <dd>FIEA Application</dd></div>
             <div class="sidebar-card__row"><dt>Year</dt>      <dd>2025</dd></div>
-            <div class="sidebar-card__row"><dt>Role</dt>      <dd>[ Your role ]</dd></div>
-            <div class="sidebar-card__row"><dt>Engine</dt>    <dd>[ Engine ]</dd></div>
-            <div class="sidebar-card__row"><dt>Language</dt>  <dd>[ Language ]</dd></div>
-            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+            <div class="sidebar-card__row"><dt>Engine</dt>    <dd>Unity</dd></div>
+            <div class="sidebar-card__row"><dt>Language</dt>  <dd>C#</dd></div>
+            <div class="sidebar-card__row"><dt>Role</dt>      <dd>Solo Developer</dd></div>
+            <div class="sidebar-card__row"><dt>Platform</dt>  <dd>VR</dd></div>
           </dl>
         </div>
 
         <div class="sidebar-card">
           <p class="sidebar-card__label">Skills Used</p>
           <dl>
-            <!-- ▼▼▼ REPLACE: fill in skills ▼▼▼ -->
-            <div class="sidebar-card__row"><dt>[ Skill 1 ]</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>[ Skill 2 ]</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>[ Skill 3 ]</dt><dd>✓</dd></div>
-            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+            <div class="sidebar-card__row"><dt>VR Development</dt>    <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Shader Programming</dt><dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Unity 3D</dt>          <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>C# Scripting</dt>      <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Level Design</dt>      <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Narrative Design</dt>  <dd>✓</dd></div>
           </dl>
         </div>
 
         <div class="sidebar-card sidebar-links">
-          <!-- ▼▼▼ REPLACE: add links ▼▼▼ -->
-          <!-- <a href="https://itch.io/YOUR-LINK" target="_blank" rel="noopener" class="btn btn--primary">Play on itch.io</a> -->
-          <!-- <a href="https://github.com/YOUR-REPO" target="_blank" rel="noopener" class="btn btn--outline">GitHub Repo</a> -->
-          <p style="font-size:.8rem;color:var(--text-muted);text-align:center;">Add project links above.</p>
-          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+          <p style="font-size:.8rem;color:var(--text-muted);text-align:center;">Project links coming soon.</p>
         </div>
       </aside>
     </div>
@@ -147,10 +149,10 @@
       <li><a href="../other-works.html">Other Works</a></li>
     </ul>
     <div class="footer__social">
-      <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/caiusruscella" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:cruscella@ruscellaimmersive.com">Email</a>
     </div>
-    <p class="footer__copy">&copy; 2026 Caius Ruscella · Ruscella Immersive LLC</p>
+    <p class="footer__copy">&copy; 2025 Caius Ruscella · Husky Jesus Games</p>
   </footer>
 
   <script src="../js/main.js"></script>

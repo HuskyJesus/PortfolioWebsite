@@ -38,18 +38,11 @@
 
   <main>
 
-    <!-- ── Trailer / Video at top ────────────────────────────── -->
+    <!-- Trailer / video at top -->
     <div class="project-trailer">
       <div class="project-trailer__inner">
-        <!-- ▼▼▼ REPLACE: paste YouTube embed or <video> tag here ▼▼▼ -->
-        <!-- Example:
-        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                title="Fright Train trailer"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        -->
+        <!-- Replace with YouTube embed or <video> tag when trailer is available -->
         <span class="project-trailer__placeholder">[ Add trailer or gameplay video here ]</span>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
       </div>
     </div>
 
@@ -60,10 +53,21 @@
 
         <h1 class="project-main__title" data-reveal>Fright Train</h1>
         <p class="project-main__meta" data-reveal>
-          Solo Project &nbsp;·&nbsp; Unity / C# &nbsp;·&nbsp; Narrative Designer
+          Solo Project &nbsp;·&nbsp; 2025 &nbsp;·&nbsp; Unity / C# &nbsp;·&nbsp; Narrative Designer
         </p>
 
-        <!-- Screenshots before description -->
+        <p class="project-main__desc" data-reveal>
+          Fright Train is a short first-person horror experience built in Unity in which players
+          explore abandoned rail tunnels while being hunted by a twisted version of Thomas the Tank
+          Engine. The project was developed as an assignment that required the use of the Thomas the
+          Tank Engine franchise as the thematic foundation. The goal was to reinterpret the recognizable
+          children's character within a horror setting, using environmental tension, limited player
+          guidance, and scripted encounters to create suspense. Players navigate the tunnels, uncover
+          story elements through notes, and restore power systems in order to escape before the
+          pursuing engine reaches them.
+        </p>
+
+        <!-- Screenshots before extended content -->
         <p class="project-section-label" data-reveal>Screenshots</p>
         <div class="project-gallery" data-reveal>
           <div class="project-gallery__item"><img src="../images/FT1.gif" alt="Fright Train - gameplay 1"/></div>
@@ -71,30 +75,27 @@
           <div class="project-gallery__item"><img src="../images/FT3.gif" alt="Fright Train - gameplay 3"/></div>
         </div>
 
-        <p class="project-section-label" data-reveal>Overview</p>
-        <p class="project-main__desc" data-reveal>
-          A horror game built in Unity that subverts the cheerful world of Thomas the Tank Engine.
-          Players navigate a tense environment filled with note interactions, scripted triggers,
-          and progression systems designed to build dread through environmental storytelling rather
-          than jump scares.
-        </p>
-
-        <p class="project-section-label" data-reveal>What I Built</p>
-        <ul data-reveal style="color:var(--text-primary);padding-left:1.25rem;line-height:2;">
-          <li>Environment asset implementation</li>
-          <li>Gameplay trigger scripting</li>
-          <li>Note interactions</li>
-          <li>Progression systems to support environmental storytelling</li>
-        </ul>
-
-        <!-- ▼▼▼ REPLACE: fill in design notes ▼▼▼ -->
-        <p class="project-section-label" data-reveal>Design Notes</p>
+        <p class="project-section-label" data-reveal>Environment Construction &amp; Asset Implementation</p>
         <p data-reveal style="color:var(--text-primary);">
-          Add notes here about your design philosophy for this project - how you approached
-          building tension, what environmental storytelling techniques you used, and what
-          you took away from working in the horror genre.
+          For this project I constructed the playable level using a 3D environment asset pack integrated
+          into Unity. I modified the underground tunnel layout, placed environmental props, lighting,
+          and atmospheric effects to establish the horror tone, and configured colliders and navigation
+          paths to support gameplay. The asset implementation process included organizing and integrating
+          modular environment pieces to create a cohesive space that guided player exploration while
+          maintaining clear sightlines and tension throughout the level.
         </p>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+
+        <p class="project-section-label" data-reveal>Gameplay Systems &amp; Scripting</p>
+        <p data-reveal style="color:var(--text-primary);">
+          My work on the project focused heavily on implementing gameplay interactions and progression
+          systems using C# in Unity. I scripted interactive note systems used to deliver environmental
+          storytelling, objective tracking systems that guide players through tasks such as activating
+          fuse boxes and turning valves, and gameplay triggers that control progression through the
+          level. Additional scripting supported player interaction prompts, environmental events, and
+          enemy spawning conditions that escalate tension as players approach the escape sequence.
+          Together these systems create a structured horror experience that combines exploration,
+          narrative clues, and timed pressure from the pursuing enemy.
+        </p>
 
       </article>
 
@@ -106,9 +107,7 @@
             <div class="sidebar-card__row"><dt>Engine</dt>    <dd>Unity</dd></div>
             <div class="sidebar-card__row"><dt>Language</dt>  <dd>C#</dd></div>
             <div class="sidebar-card__row"><dt>Role</dt>      <dd>Solo Developer</dd></div>
-            <!-- ▼▼▼ REPLACE ▼▼▼ -->
-            <div class="sidebar-card__row"><dt>Year</dt>      <dd>[ Year ]</dd></div>
-            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+            <div class="sidebar-card__row"><dt>Year</dt>      <dd>2025</dd></div>
           </dl>
         </div>
 
@@ -120,15 +119,15 @@
             <div class="sidebar-card__row"><dt>Environmental Design</dt>  <dd>✓</dd></div>
             <div class="sidebar-card__row"><dt>Narrative Triggers</dt>    <dd>✓</dd></div>
             <div class="sidebar-card__row"><dt>Asset Integration</dt>     <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>Level Design</dt>          <dd>✓</dd></div>
           </dl>
         </div>
 
         <div class="sidebar-card sidebar-links">
-          <!-- ▼▼▼ REPLACE: add links ▼▼▼ -->
+          <!-- Add links when available -->
           <!-- <a href="https://itch.io/YOUR-LINK" target="_blank" rel="noopener" class="btn btn--primary">Play on itch.io</a> -->
           <!-- <a href="https://github.com/YOUR-REPO" target="_blank" rel="noopener" class="btn btn--outline">GitHub Repo</a> -->
           <p style="font-size:.8rem;color:var(--text-muted);text-align:center;">Add project links above.</p>
-          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
         </div>
       </aside>
     </div>
@@ -146,10 +145,10 @@
       <li><a href="../other-works.html">Other Works</a></li>
     </ul>
     <div class="footer__social">
-      <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/caiusruscella" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:cruscella@ruscellaimmersive.com">Email</a>
     </div>
-    <p class="footer__copy">&copy; 2026 Caius Ruscella · Ruscella Immersive LLC</p>
+    <p class="footer__copy">&copy; 2025 Caius Ruscella · Husky Jesus Games</p>
   </footer>
 
   <script src="../js/main.js"></script>
