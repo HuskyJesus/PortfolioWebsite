@@ -171,13 +171,14 @@ The `<object>` tag embeds it inline; the download button above it lets visitors 
 
 ### Project Page Structure (keep this order)
 
-1. Trailer video at top (`.project-trailer`) - use placeholder span if no video yet
-2. Back link `← Projects`
-3. Title + meta line (context · role · year)
-4. Short description (2-4 sentences, `.project-main__desc`)
-5. Screenshots gallery (`.project-gallery`) - placeholders are fine until images exist
-6. Content sections - 2-3 named sections, each with a `project-section-label` heading and a real paragraph
-7. Sidebar (Project Details, Skills Used, Links)
+1. Back link `← Projects`
+2. Title + meta line (context · role · year)
+3. Short description (2-4 sentences, `.project-main__desc`)
+4. Screenshots/media gallery (`.project-gallery`) - placeholders are fine until images exist; videos go here too (use `grid-column:1/-1` to span full width)
+5. Content sections - 2-3 named sections, each with a `project-section-label` heading and a real paragraph
+6. Sidebar (Project Details, Skills Used, Links)
+
+Note: there is no top trailer slot. Videos (trailers, gameplay) go inside the screenshots gallery, spanning the full row with `style="grid-column:1/-1;"`.
 
 ### Writing Content Sections
 
