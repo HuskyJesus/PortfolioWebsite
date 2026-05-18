@@ -155,7 +155,7 @@ p:last-child { margin-bottom: 0; }
 /* ── Falling Petals ─────────────────────────────────────────── */
 .petals {
   position: fixed; inset: 0;
-  pointer-events: none; z-index: 5; overflow: hidden;
+  pointer-events: none; z-index: 1; overflow: hidden;
 }
 
 .petal {
@@ -188,6 +188,7 @@ p:last-child { margin-bottom: 0; }
 [data-reveal][data-delay="5"]        { transition-delay: 0.5s; }
 
 /* ── Layout Helpers ─────────────────────────────────────────── */
+main        { position: relative; z-index: 2; }
 .section    { padding: var(--section-pad); position: relative; z-index: 2; }
 .section--alt { background: var(--bg-secondary); }
 .container  { max-width: var(--max-width); margin: 0 auto; }
@@ -680,6 +681,7 @@ p:last-child { margin-bottom: 0; }
   border-top: 1px solid var(--border);
   padding: 3.5rem 2rem 2rem;
   text-align: center; position: relative; overflow: hidden;
+  z-index: 2;
 }
 .footer__name  {
   font-family: var(--font-display);
