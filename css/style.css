@@ -726,12 +726,19 @@ main        { position: relative; z-index: 2; }
   .hero__content         { grid-template-columns: 1fr; gap: 2rem; }
   .featured__inner       { grid-template-columns: 1fr; gap: 2rem; }
   .about__grid           { grid-template-columns: 1fr; gap: 2.5rem; }
-  .about__image-wrap     { aspect-ratio: 3/2; max-width: 380px; }
+  .about__image-wrap     { aspect-ratio: 3/4; max-width: 300px; }
+  .about__image-wrap img { object-position: center; }
   .project-layout        { grid-template-columns: 1fr; }
   .project-sidebar       { position: static; }
 }
 @media (max-width: 720px) {
-  .cards-grid      { grid-template-columns: 1fr; }
+  .cards-grid      { grid-template-columns: 1fr !important; }
+  /* Reset lone-card rule: in a 1-col layout every card is full width */
+  .cards-grid > .card:last-child:nth-child(odd) {
+    grid-column: auto;
+    max-width: 100%;
+    margin: 0;
+  }
 }
 @media (max-width: 600px) {
   :root { --section-pad: 3.5rem 1.25rem; }
