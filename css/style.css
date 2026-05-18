@@ -394,8 +394,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .card__body   { padding: 1.4rem 1.5rem; flex: 1; display: flex; flex-direction: column; }
-.card__title  { font-family: var(--font-display); font-size: 1.4rem; color: var(--text-muted); margin-bottom: 0.3rem; }
-.card__meta   { font-size: 0.78rem; color: var(--text-secondary); letter-spacing: 0.04em; margin-bottom: 0.75rem; }
+.card__title  { font-family: var(--font-display); font-size: 1.4rem; color: var(--text-secondary); margin-bottom: 0.3rem; }
+.card__meta   { font-size: 0.78rem; color: var(--pink-light); letter-spacing: 0.04em; margin-bottom: 0.75rem; }
 .card__desc   { font-size: 0.93rem; color: var(--text-primary); flex: 1; margin-bottom: 1.2rem; }
 .card__link   { font-size: 0.8rem; color: var(--rose); letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
 .card__link:hover { color: var(--pink-light); }
