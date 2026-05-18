@@ -38,7 +38,6 @@
 
   <main>
 
-    <!-- Trailer at top -->
     <div class="project-trailer">
       <div class="project-trailer__inner">
         <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;">
@@ -51,11 +50,11 @@
     <div class="project-layout">
 
       <article class="project-main">
-        <a href="../projects.html" class="project-main__back">← Projects</a>
+        <a href="../projects.html" class="project-main__back">&larr; Projects</a>
 
         <h1 class="project-main__title" data-reveal>What Do They See?</h1>
         <p class="project-main__meta" data-reveal>
-          FIEA Application Project &nbsp;·&nbsp; 2025 &nbsp;·&nbsp; Solo Developer &nbsp;·&nbsp; Unity / C# &nbsp;·&nbsp; VR
+          FIEA Application Project &nbsp;&middot;&nbsp; 2025 &nbsp;&middot;&nbsp; Solo Developer &nbsp;&middot;&nbsp; Unity / C# &nbsp;&middot;&nbsp; VR
         </p>
 
         <p class="project-main__desc" data-reveal>
@@ -66,42 +65,49 @@
           creating a puzzle experience built around perception and discovery.
         </p>
 
-        <!-- Screenshots before everything else -->
         <p class="project-section-label" data-reveal>Screenshots</p>
         <div class="project-gallery" data-reveal>
-          <!-- Replace placeholders with actual screenshots -->
           <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 1 ]</div></div>
           <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 2 ]</div></div>
           <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 3 ]</div></div>
           <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Screenshot 4 ]</div></div>
         </div>
 
-        <p class="project-section-label" data-reveal>How It Works</p>
+        <p class="project-section-label" data-reveal>Custom Shader System &amp; Visual Mechanics</p>
         <p data-reveal style="color:var(--text-primary);">
-          All objects in the experience exist in the scene simultaneously - custom shaders filter
-          what is visible based on the active lens color. Swapping lenses is a physical in-world
-          action: the player reaches up and changes the lens on the glasses they are wearing,
-          revealing a new layer of the environment without loading a new scene.
+          The core of the experience is a custom shader system that controls object visibility
+          based on the player's active lens. All objects in the scene exist simultaneously - the
+          shader filters what renders depending on which lens is equipped, so switching lenses
+          reveals an entirely different layer of the environment without loading a new scene or
+          swapping geometry. I built each lens as a distinct material pass that selectively
+          renders tagged objects, allowing the red, green, and purple layers to coexist in the
+          same world space and transition instantly when the player changes lenses.
         </p>
 
-        <p class="project-section-label" data-reveal>Experience Walkthrough</p>
-        <ul data-reveal style="color:var(--text-primary);padding-left:1.25rem;line-height:2.2;">
-          <li><strong style="color:var(--pink-mid);">Red lenses</strong> - The player puts on the glasses and sees a code written in the environment that is invisible without the lens.</li>
-          <li><strong style="color:var(--text-secondary);">Teleport to the desk</strong> - Using the revealed information, the player moves to the next area.</li>
-          <li><strong style="color:var(--pink-mid);">Green lenses</strong> - Swapping to green reveals a book in the world. Picking it up moves a hidden wall, exposing a safe behind it.</li>
-          <li><strong style="color:var(--pink-mid);">Red lenses again</strong> - The player uses the code they memorized to unlock the now-visible safe.</li>
-          <li><strong style="color:var(--pink-mid);">Purple lenses</strong> - The player puts on the final lens, turns around, and is met with a jumpscare.</li>
-        </ul>
+        <p class="project-section-label" data-reveal>VR Interactions &amp; Meta Framework Integration</p>
+        <p data-reveal style="color:var(--text-primary);">
+          Player interactions were built on top of Meta's Interaction SDK, which provided the
+          hand-tracking and grab foundation for in-world object manipulation. I used the framework
+          to implement the lens-swapping mechanic as a physical action - the player reaches up,
+          grabs the lens on the glasses they are wearing, and replaces it - as well as the book
+          pickup that triggers a hidden wall reveal and the safe interaction that requires the
+          player to enter the code they observed through the red lens. Teleportation locomotion
+          was also implemented within the framework to move the player between the key areas of
+          the level without breaking immersion or introducing motion sickness.
+        </p>
 
-        <p class="project-section-label" data-reveal>What I Built</p>
-        <ul data-reveal style="color:var(--text-primary);padding-left:1.25rem;line-height:2;">
-          <li>Custom shader system that selectively renders objects based on active lens color</li>
-          <li>VR lens-swapping interaction built for headset hand tracking</li>
-          <li>Environmental object interactions - book pickup, hidden wall reveal, safe unlock</li>
-          <li>Teleportation locomotion system</li>
-          <li>Scripted jumpscare sequence with audio and environmental triggers</li>
-          <li>Full level design and environment layout</li>
-        </ul>
+        <p class="project-section-label" data-reveal>Level Design &amp; Scripted Sequence</p>
+        <p data-reveal style="color:var(--text-primary);">
+          I designed the full level layout and authored the progression sequence that guides the
+          player through the experience without explicit instruction. The red lens introduces the
+          mechanic by revealing a code written in the environment that is invisible without it.
+          Swapping to green surfaces a book that, when picked up, moves a hidden wall and exposes
+          a safe behind it. The player then returns to red to use the memorized code on the now-
+          visible safe. The final sequence equips the purple lens - the player turns around and is
+          met with a scripted jumpscare using environmental triggers and audio to close the
+          experience. Each beat was designed to teach the lens mechanic naturally through use
+          rather than tutorial text.
+        </p>
 
       </article>
 
@@ -114,19 +120,20 @@
             <div class="sidebar-card__row"><dt>Engine</dt>    <dd>Unity</dd></div>
             <div class="sidebar-card__row"><dt>Language</dt>  <dd>C#</dd></div>
             <div class="sidebar-card__row"><dt>Role</dt>      <dd>Solo Developer</dd></div>
-            <div class="sidebar-card__row"><dt>Platform</dt>  <dd>VR</dd></div>
+            <div class="sidebar-card__row"><dt>Platform</dt>  <dd>VR (Meta)</dd></div>
           </dl>
         </div>
 
         <div class="sidebar-card">
           <p class="sidebar-card__label">Skills Used</p>
           <dl>
-            <div class="sidebar-card__row"><dt>VR Development</dt>    <dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Shader Programming</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Unity 3D</dt>          <dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>C# Scripting</dt>      <dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Level Design</dt>      <dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Narrative Design</dt>  <dd>✓</dd></div>
+            <div class="sidebar-card__row"><dt>VR Development</dt>     <dd>&#10003;</dd></div>
+            <div class="sidebar-card__row"><dt>Shader Programming</dt> <dd>&#10003;</dd></div>
+            <div class="sidebar-card__row"><dt>Meta Interaction SDK</dt><dd>&#10003;</dd></div>
+            <div class="sidebar-card__row"><dt>Unity 3D</dt>           <dd>&#10003;</dd></div>
+            <div class="sidebar-card__row"><dt>C# Scripting</dt>       <dd>&#10003;</dd></div>
+            <div class="sidebar-card__row"><dt>Level Design</dt>       <dd>&#10003;</dd></div>
+            <div class="sidebar-card__row"><dt>Narrative Design</dt>   <dd>&#10003;</dd></div>
           </dl>
         </div>
 
@@ -152,7 +159,7 @@
       <a href="https://www.linkedin.com/in/caiusruscella" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:cruscella@ruscellaimmersive.com">Email</a>
     </div>
-    <p class="footer__copy">&copy; 2025 Caius Ruscella · Husky Jesus Games</p>
+    <p class="footer__copy">&copy; 2025 Caius Ruscella &middot; Husky Jesus Games</p>
   </footer>
 
   <script src="../js/main.js"></script>
