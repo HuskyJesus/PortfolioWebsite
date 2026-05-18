@@ -163,20 +163,32 @@ The `<object>` tag embeds it inline; the download button above it lets visitors 
 
 ## Adding a New Project
 
-1. Copy `projects/_GAME-TEMPLATE.html` and rename it (e.g. `projects/my-new-game.html`)
-2. Fill in every section - title, meta, description, gallery images, sidebar details
+1. Copy `projects/_GAME-TEMPLATE.html` or `projects/_NARRATIVE-TEMPLATE.html` and rename it
+2. Fill in every section marked with `[ ... ]` or a comment
 3. Add a card block to `projects.html` - duplicate one of the existing `<a class="card">` blocks
 4. Add the card thumbnail image to `images/`
 5. Add the project to the Current Projects table below in this README
 
-Project page structure (in order):
-1. Trailer video at top (`.project-trailer`)
-2. Back link to `← Projects`
-3. Title + meta
-4. Short description
-5. Screenshots gallery (`.project-gallery`)
-6. Extended sections (What I Built, Design Notes, etc.)
+### Project Page Structure (keep this order)
+
+1. Trailer video at top (`.project-trailer`) - use placeholder span if no video yet
+2. Back link `← Projects`
+3. Title + meta line (context · role · year)
+4. Short description (2-4 sentences, `.project-main__desc`)
+5. Screenshots gallery (`.project-gallery`) - placeholders are fine until images exist
+6. Content sections - 2-3 named sections, each with a `project-section-label` heading and a real paragraph
 7. Sidebar (Project Details, Skills Used, Links)
+
+### Writing Content Sections
+
+Name sections after the actual work done, not generic labels. Examples:
+
+- `Gameplay Systems & Programming` - scripting, AI, mechanics
+- `Environment Construction & Asset Integration` - level layout, props, lighting
+- `Narrative Writing & Voice Performance` - script, voice acting, bark sheets
+- `Systems Design & Documentation` - GDD, flowcharts, balance spreadsheets
+
+Each paragraph should describe your specific contributions - what you built, what decisions you made, and how you worked. Avoid describing what the game does without connecting it to what you did.
 
 ---
 

@@ -1,31 +1,30 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--
-  ╔══════════════════════════════════════════════════════════════╗
-  ║  NARRATIVE PROJECT TEMPLATE                                  ║
-  ║                                                              ║
-  ║  Use this for: GDD excerpts, bark sheet libraries, scripts,  ║
-  ║  dialogue samples, quest docs, writing portfolios, or any    ║
-  ║  narrative-first work sample.                                ║
-  ║                                                              ║
-  ║  HOW TO USE:                                                 ║
-  ║  1. Copy this file and rename it  (e.g. my-gdd-sample.html) ║
-  ║  2. Search for every ▼▼▼ REPLACE comment and fill it in      ║
-  ║  3. Add the card to narrative-projects.html (see comment)    ║
-  ║  4. Drop images/PDFs into images/ or docs/ and update paths  ║
-  ║                                                              ║
-  ║  Files prefixed with _ are templates - not part of your nav. ║
-  ╚══════════════════════════════════════════════════════════════╝
+  NARRATIVE PROJECT TEMPLATE
+
+  Use this for: GDD excerpts, bark sheet libraries, scripts,
+  dialogue samples, quest docs, writing portfolios, or any
+  narrative-first work sample.
+
+  HOW TO USE:
+  1. Copy this file and rename it (e.g. my-gdd-sample.html)
+  2. Fill in every section marked with [ ... ] or a comment
+  3. Add a card to projects.html - duplicate an existing card block
+  4. Drop images/PDFs into images/ or docs/ and update paths
+
+  Page structure (keep this order):
+    trailer slot -> back link -> title -> meta -> short desc ->
+    screenshots/samples -> content sections -> sidebar
+
+  Files prefixed with _ won't appear in the nav and don't need to be
+  deployed until they're filled out.
 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- ▼▼▼ REPLACE: update title ▼▼▼ -->
   <title>PROJECT / DOCUMENT TITLE - Caius Ruscella</title>
   <meta name="description" content="Short one-sentence description for search engines."/>
-  <!-- ▲▲▲ END REPLACE ▲▲▲ -->
-
   <link rel="stylesheet" href="../css/style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -38,8 +37,9 @@
     <a href="../index.html" class="nav__logo">Caius Ruscella</a>
     <ul class="nav__links">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../game-projects.html">Game Projects</a></li>
-      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../technical.html">Technical</a></li>
+      <li><a href="../other-works.html">Other Works</a></li>
       <li><a href="../index.html#about">About</a></li>
       <li><a href="../index.html#contact">Contact</a></li>
     </ul>
@@ -49,202 +49,119 @@
   </nav>
   <nav class="nav__mobile" aria-label="Mobile navigation">
     <a href="../index.html">Home</a>
-    <a href="../game-projects.html">Game Projects</a>
-    <a href="../narrative-projects.html">Narrative Projects</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../technical.html">Technical</a>
+    <a href="../other-works.html">Other Works</a>
     <a href="../index.html#about">About</a>
     <a href="../index.html#contact">Contact</a>
   </nav>
 
   <main>
 
-    <!-- ══════════════════════════════════════════════════════
-         BANNER IMAGE
-         Works well with: a GDD cover page screenshot, key art,
-         a dialogue tree diagram, or an atmospheric scene shot.
-         Ideal size: 1600×600 px or wider.
-    ══════════════════════════════════════════════════════ -->
-    <div class="project-banner">
-      <!-- ▼▼▼ REPLACE: remove <span>, uncomment <img> ▼▼▼ -->
-      <span class="project-banner-placeholder">[ Banner image - replace me ]</span>
-      <!-- <img src="../images/YOUR-PROJECT-banner.jpg" alt="Project name - banner"/> -->
-      <!-- ▲▲▲ END REPLACE ▲▲▲ -->
-      <img src="../images/branch.svg" alt="" aria-hidden="true"
-           style="position:absolute;bottom:0;right:0;width:min(35%,320px);opacity:.18;pointer-events:none;"/>
+    <!-- Trailer slot. For a narrative doc without video, leave the placeholder.
+         Replace with a YouTube iframe or <video> tag if a trailer exists. -->
+    <div class="project-trailer">
+      <div class="project-trailer__inner">
+        <span class="project-trailer__placeholder">[ Add trailer or video here ]</span>
+      </div>
     </div>
 
     <div class="project-layout">
 
-      <!-- ════════════════════════════════════════
-           MAIN CONTENT COLUMN
-      ════════════════════════════════════════ -->
       <article class="project-main">
+        <a href="../projects.html" class="project-main__back">&larr; Projects</a>
 
-        <a href="../narrative-projects.html" class="project-main__back">← Narrative Projects</a>
-
-        <!-- ▼▼▼ REPLACE ▼▼▼ -->
         <h1 class="project-main__title" data-reveal>Document / Project Title</h1>
         <p class="project-main__meta" data-reveal>
-          Project or Studio Context &nbsp;·&nbsp; Document Type &nbsp;·&nbsp; Year
+          Project or Studio Context &nbsp;&middot;&nbsp; Document Type &nbsp;&middot;&nbsp; Year
         </p>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
-        <!-- ▼▼▼ REPLACE: 2-4 sentence overview ▼▼▼ -->
+        <!-- 2-4 sentences: what is this document, what does it demonstrate, what was the context. -->
         <p class="project-main__desc" data-reveal>
           Describe what this document or narrative work is and what it demonstrates.
           Is it a GDD for a specific game? A bark sheet library? A script excerpt?
-          Give the reader immediate context for what they're looking at and why it matters.
+          Give the reader immediate context for what they are looking at and why it matters.
         </p>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
-        <!-- ── Context / Background ──────────────────────────
-             Explain the project this writing belongs to.
-             What was the game? What was your role? What
-             narrative challenge were you solving?
-        ────────────────────────────────────────────────── -->
-        <!-- ▼▼▼ REPLACE ▼▼▼ -->
-        <p class="project-section-label" data-reveal>Context</p>
-        <p data-reveal style="color:var(--text-secondary);">
-          Describe the game or project this writing belongs to. What was the setting,
-          tone, and target audience? What narrative problem were you solving, and
-          what constraints were you working within (team size, timeline, genre)?
+        <!-- Screenshots of document pages, dialogue trees, GDD spreads, etc.
+             Replace each placeholder with: <img src="../images/YOUR-doc-page.jpg" alt="Description"/> -->
+        <p class="project-section-label" data-reveal>Pages &amp; Samples</p>
+        <div class="project-gallery" data-reveal>
+          <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Page / sample 1 ]</div></div>
+          <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Page / sample 2 ]</div></div>
+          <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Page / sample 3 ]</div></div>
+          <div class="project-gallery__item"><div class="project-gallery__item-placeholder">[ Page / sample 4 ]</div></div>
+        </div>
+
+        <!-- Content sections: aim for 2-3 named sections with a real paragraph each.
+             Good headings for narrative work: "Context & Background", "Approach",
+             "What This Covers", "Design Decisions", "Voice & Tone".
+             Each paragraph should explain your thinking and process, not just list what exists. -->
+
+        <p class="project-section-label" data-reveal>Context &amp; Background</p>
+        <p data-reveal style="color:var(--text-primary);">
+          Describe the game or project this writing belongs to. What was the setting, tone, and
+          target audience? What narrative problem were you solving, and what constraints were you
+          working within - team size, timeline, genre requirements?
         </p>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
-        <!-- ── What This Document Covers ────────────────────── -->
-        <!-- ▼▼▼ REPLACE ▼▼▼ -->
-        <p class="project-section-label" data-reveal>What This Covers</p>
-        <ul data-reveal style="color:var(--text-secondary);padding-left:1.25rem;line-height:2;">
-          <li>Topic or section covered in this document / sample</li>
-          <li>Topic or section covered in this document / sample</li>
-          <li>Topic or section covered in this document / sample</li>
-          <li>Topic or section covered in this document / sample</li>
-        </ul>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
-
-        <!-- ── Design / Writing Approach ────────────────────── -->
-        <!-- ▼▼▼ REPLACE ▼▼▼ -->
         <p class="project-section-label" data-reveal>Approach</p>
-        <p data-reveal style="color:var(--text-secondary);">
-          How did you approach writing this? What narrative techniques, frameworks,
-          or tools did you use? What tradeoffs did you make and why?
-          This section shows how you think, not just what you produced.
+        <p data-reveal style="color:var(--text-primary);">
+          How did you approach writing this? What narrative techniques, frameworks, or tools did
+          you use? What tradeoffs did you make and why? This is where you show how you think,
+          not just what you produced.
         </p>
-        <!-- ▲▲▲ END REPLACE ▲▲▲ -->
 
-        <!-- ── Optional: Excerpt / Sample Text ──────────────── -->
-        <!-- Uncomment and use this block to show a text excerpt inline.
-             Wrap in a styled blockquote or pre block as appropriate.
-        -->
-        <!--
+        <!-- Optional: inline text excerpt. Uncomment to use.
         <p class="project-section-label" data-reveal>Excerpt</p>
         <blockquote data-reveal style="
           border-left: 3px solid var(--rose);
           padding: 1rem 1.5rem;
           background: var(--bg-card);
           border-radius: 0 6px 6px 0;
-          color: var(--text-secondary);
+          color: var(--text-primary);
           font-style: italic;
           margin: 0.5rem 0 1.5rem;
         ">
-          "Paste a short excerpt from the document here - a line of dialogue,
-           a bark, a quest description, or a GDD paragraph."
+          "Paste a short excerpt - a line of dialogue, a bark, a quest description, or a GDD paragraph."
         </blockquote>
         -->
 
-        <!-- ── Images / Document Screenshots ────────────────── -->
-        <p class="project-section-label" data-reveal>Pages &amp; Samples</p>
-        <div class="project-gallery" data-reveal>
-          <!--
-            ▼▼▼ REPLACE: swap placeholders with screenshots of GDD pages,
-            bark sheet tables, dialogue trees, script pages, etc.
-            Recommended size: 800×450 px (16:9) or 800×1035 px (portrait)
-
-            Example:
-              <div class="project-gallery__item">
-                <img src="../images/YOUR-doc-page1.jpg" alt="GDD page 1 - combat system"/>
-              </div>
-          -->
-          <div class="project-gallery__item">
-            <div class="project-gallery__item-placeholder">[ Page / sample image 1 ]</div>
-          </div>
-          <div class="project-gallery__item">
-            <div class="project-gallery__item-placeholder">[ Page / sample image 2 ]</div>
-          </div>
-          <div class="project-gallery__item">
-            <div class="project-gallery__item-placeholder">[ Page / sample image 3 ]</div>
-          </div>
-          <div class="project-gallery__item">
-            <div class="project-gallery__item-placeholder">[ Page / sample image 4 ]</div>
-          </div>
-          <!-- ▲▲▲ END REPLACE ▲▲▲ -->
-        </div>
+        <!-- Add a third section by duplicating the two lines above. Remove one if two is enough. -->
 
       </article>
 
-      <!-- ════════════════════════════════════════
-           SIDEBAR
-      ════════════════════════════════════════ -->
       <aside class="project-sidebar">
-
         <div class="sidebar-card">
           <p class="sidebar-card__label">Document Details</p>
           <dl>
-            <!-- ▼▼▼ REPLACE: fill in; delete rows you don't need ▼▼▼ -->
-            <div class="sidebar-card__row">
-              <dt>Type</dt>      <dd>[ GDD / Bark Sheet / Script / Quest Doc ]</dd>
-            </div>
-            <div class="sidebar-card__row">
-              <dt>Project</dt>   <dd>[ Game / Studio this belongs to ]</dd>
-            </div>
-            <div class="sidebar-card__row">
-              <dt>Role</dt>      <dd>[ Your role on the project ]</dd>
-            </div>
-            <div class="sidebar-card__row">
-              <dt>Scope</dt>     <dd>[ e.g. 40-page GDD / 200-line bark library ]</dd>
-            </div>
-            <div class="sidebar-card__row">
-              <dt>Year</dt>      <dd>[ Year ]</dd>
-            </div>
-            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+            <!-- Delete rows you don't need. -->
+            <div class="sidebar-card__row"><dt>Type</dt>    <dd>[ GDD / Bark Sheet / Script / Quest Doc ]</dd></div>
+            <div class="sidebar-card__row"><dt>Project</dt> <dd>[ Game / Studio this belongs to ]</dd></div>
+            <div class="sidebar-card__row"><dt>Role</dt>    <dd>[ Your role on the project ]</dd></div>
+            <div class="sidebar-card__row"><dt>Scope</dt>   <dd>[ e.g. 40-page GDD / 200-line bark library ]</dd></div>
+            <div class="sidebar-card__row"><dt>Year</dt>    <dd>[ Year ]</dd></div>
           </dl>
         </div>
 
         <div class="sidebar-card">
           <p class="sidebar-card__label">Skills Demonstrated</p>
           <dl>
-            <!-- ▼▼▼ REPLACE ▼▼▼ -->
-            <div class="sidebar-card__row"><dt>Skill</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Skill</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Skill</dt><dd>✓</dd></div>
-            <div class="sidebar-card__row"><dt>Skill</dt><dd>✓</dd></div>
-            <!-- ▲▲▲ END REPLACE ▲▲▲ -->
+            <div class="sidebar-card__row"><dt>Skill One</dt>  <dd>&#10003;</dd></div>
+            <div class="sidebar-card__row"><dt>Skill Two</dt>  <dd>&#10003;</dd></div>
+            <div class="sidebar-card__row"><dt>Skill Three</dt><dd>&#10003;</dd></div>
+            <div class="sidebar-card__row"><dt>Skill Four</dt> <dd>&#10003;</dd></div>
           </dl>
         </div>
 
         <div class="sidebar-card sidebar-links">
-          <!--
-            ▼▼▼ REPLACE: uncomment whichever links apply ▼▼▼
-
-            Full document PDF:
-            <a href="../docs/YOUR-DOCUMENT.pdf" target="_blank" rel="noopener" class="btn btn--primary">
-              Read Full Document
-            </a>
-
-            Link to the game it belongs to:
-            <a href="YOUR-GAME-PAGE.html" class="btn btn--outline">
-              View Game Project
-            </a>
-
-            External link (Google Doc, Notion, etc.):
-            <a href="https://YOUR-LINK" target="_blank" rel="noopener" class="btn btn--outline">
-              View on Google Docs
-            </a>
+          <!-- Uncomment whichever apply:
+          <a href="../docs/YOUR-DOCUMENT.pdf" target="_blank" rel="noopener" class="btn btn--primary">Read Full Document</a>
+          <a href="YOUR-GAME-PAGE.html" class="btn btn--outline">View Game Project</a>
+          <a href="https://YOUR-LINK" target="_blank" rel="noopener" class="btn btn--outline">View on Google Docs</a>
           -->
-          <p style="font-size:.8rem;color:var(--text-muted);text-align:center;">
-            Add document links by uncommenting the examples above.
-          </p>
+          <p style="font-size:.8rem;color:var(--text-muted);text-align:center;">Add document links above.</p>
         </div>
-
       </aside>
     </div>
 
@@ -256,14 +173,15 @@
     <p class="footer__title">Narrative Designer &amp; Game Developer</p>
     <ul class="footer__nav">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../game-projects.html">Game Projects</a></li>
-      <li><a href="../narrative-projects.html">Narrative Projects</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../technical.html">Technical</a></li>
+      <li><a href="../other-works.html">Other Works</a></li>
     </ul>
     <div class="footer__social">
-      <a href="https://www.linkedin.com/in/caius-ruscella" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/caiusruscella" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:cruscella@ruscellaimmersive.com">Email</a>
     </div>
-    <p class="footer__copy">&copy; 2026 Caius Ruscella · Ruscella Immersive LLC</p>
+    <p class="footer__copy">&copy; 2025 Caius Ruscella &middot; Husky Jesus Games</p>
   </footer>
 
   <script src="../js/main.js"></script>
