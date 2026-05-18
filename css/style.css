@@ -605,7 +605,7 @@ p:last-child { margin-bottom: 0; }
 .project-main__back:hover { color: var(--pink-light); }
 
 .project-main__title   { color: var(--pink-light); margin-bottom: 0.35rem; }
-.project-main__meta    { font-size: 0.95rem; color: var(--text-muted); letter-spacing: 0.04em; margin-bottom: 1.5rem; }
+.project-main__meta    { font-size: 1.05rem; color: var(--text-muted); letter-spacing: 0.04em; margin-bottom: 1.5rem; }
 .project-main__desc    { color: var(--text-primary); margin-bottom: 2rem; }
 
 .project-section-label {
